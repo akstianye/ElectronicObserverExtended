@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ICSharpCode.SharpZipLib.Zip;
 
 namespace ElectronicObserver.Resource
 {
@@ -266,8 +267,7 @@ namespace ElectronicObserver.Resource
 		private void LoadFromArchive(string path)
 		{
 
-
-			using (var archive = new ZipArchive(File.OpenRead(path), ZipArchiveMode.Read))
+			using (var archive = new ZipFile(File.OpenRead(path)))
 			{
 
 				const string mstpath = @"Assets/";
@@ -463,7 +463,7 @@ namespace ElectronicObserver.Resource
 
 		}
 
-		private static void LoadImageFromArchive(ImageList imglist, ZipArchive arc, string path, string name)
+		private static void LoadImageFromArchive(ImageList imglist, ZipFile arc, string path, string name)
 		{
 
 			var entry = arc.GetEntry(path);
@@ -479,7 +479,7 @@ namespace ElectronicObserver.Resource
 			try
 			{
 
-				Bitmap bmp = new Bitmap(entry.Open());
+				Bitmap bmp = new Bitmap(arc.GetInputStream(entry));
 
 				if (bmp.Size != imglist.ImageSize)
 				{
@@ -503,7 +503,7 @@ namespace ElectronicObserver.Resource
 
 		}
 
-		private static Icon LoadIconFromArchive(ZipArchive arc, string path)
+		private static Icon LoadIconFromArchive(ZipFile arc, string path)
 		{
 
 			var entry = arc.GetEntry(path);
@@ -524,7 +524,7 @@ namespace ElectronicObserver.Resource
 				byte[] bytes;
 				using (MemoryStream ms = new MemoryStream())
 				{
-					entry.Open().CopyTo(ms);
+					arc.GetInputStream(entry).CopyTo(ms);
 					bytes = ms.ToArray();
 				}
 				using (MemoryStream ms = new MemoryStream(bytes))
@@ -562,7 +562,7 @@ namespace ElectronicObserver.Resource
 			}
 
 
-			using (var archive = new ZipArchive(File.OpenRead(archivePath), ZipArchiveMode.Read))
+			using (var archive = new ZipFile(File.OpenRead(archivePath)))
 			{
 
 				string entrypath = @"Assets/" + source;
@@ -593,7 +593,10 @@ namespace ElectronicObserver.Resource
 					}
 					else
 					{
-						entry.ExtractToFile(destination);
+						using (var fileStream = File.Create(destination))
+						{
+							archive.GetInputStream(entry).CopyTo(fileStream);
+						}
 					}
 					Utility.Logger.Add(2, string.Format("{0} をコピーしました。", entrypath));
 
@@ -644,7 +647,7 @@ namespace ElectronicObserver.Resource
 		/// <returns>ファイルのストリーム。オープンに失敗した場合は null を返します。</returns>
 		public static MemoryStream GetStreamFromArchive(string archivePath, string source)
 		{
-			using (var archive = new ZipArchive(File.OpenRead(archivePath), ZipArchiveMode.Read))
+			using (var archive = new ZipFile(File.OpenRead(archivePath)))
 			{
 
 				string entrypath = @"Assets/" + source;
@@ -664,7 +667,7 @@ namespace ElectronicObserver.Resource
 					byte[] bytes;
 					using (MemoryStream ms = new MemoryStream())
 					{
-						var st = entry.Open();
+						var st = archive.GetInputStream(entry);
 						st.CopyTo(ms);
 						bytes = ms.ToArray();
 						st.Close();

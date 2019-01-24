@@ -247,7 +247,7 @@ namespace ElectronicObserver.Observer
 				if (c.SaveReceivedData && c.SaveRequest)
 				{
 
-					Task.Run((Action)(() =>
+					TaskEx.Run((Action)(() =>
 					{
 						SaveRequest(url, body);
 					}));
@@ -280,7 +280,7 @@ namespace ElectronicObserver.Observer
 						string url = baseurl;
 						string body = session.Response.BodyAsString;
 
-						Task.Run((Action)(() =>
+						TaskEx.Run((Action)(() =>
 						{
 							SaveResponse(url, body);
 						}));
@@ -318,7 +318,7 @@ namespace ElectronicObserver.Observer
 						byte[] responseCopy = new byte[session.Response.Body.Length];
 						Array.Copy(session.Response.Body, responseCopy, session.Response.Body.Length);
 
-						Task.Run((Action)(() =>
+						TaskEx.Run((Action)(() =>
 						{
 							try
 							{

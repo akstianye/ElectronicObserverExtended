@@ -22,6 +22,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ElectronicObserver.Window.Plugins;
+using ICSharpCode.SharpZipLib.Zip;
 using WeifenLuo.WinFormsUI.Docking;
 
 namespace ElectronicObserver.Window
@@ -602,12 +603,12 @@ namespace ElectronicObserver.Window
 
 			try
 			{
-				using (var archive = new ZipArchive(File.OpenRead(path), ZipArchiveMode.Read))
+				using (var archive = new ZipFile(File.OpenRead(path)))
 				{
 					MainDockPanel.SuspendLayout(true);
 
-					WindowPlacementManager.LoadWindowPlacement(this, archive.GetEntry("WindowPlacement.xml").Open());
-					LoadSubWindowsLayout(archive.GetEntry("SubWindowLayout.xml").Open());
+					WindowPlacementManager.LoadWindowPlacement(this, archive.GetInputStream(archive.GetEntry("WindowPlacement.xml")));
+					LoadSubWindowsLayout(archive.GetInputStream(archive.GetEntry("SubWindowLayout.xml")));
 				}
 
 				Utility.Logger.Add(2, path + " からウィンドウ レイアウトを復元しました。");
@@ -655,18 +656,18 @@ namespace ElectronicObserver.Window
 
 				CreateParentDirectories(path);
 
-				using (var archive = new ZipArchive(File.Open(path, FileMode.Create), ZipArchiveMode.Create))
-				{
+				using (var zipStream = new ZipOutputStream(File.Open(path, FileMode.Create)))
+                {
+                    var layoutEntry = new ZipEntry("SubWindowLayout.xml");
+                    layoutEntry.DateTime = DateTime.Now;
+                    zipStream.PutNextEntry(layoutEntry);
+                    SaveSubWindowsLayout(zipStream);
 
-					using (var layoutstream = archive.CreateEntry("SubWindowLayout.xml").Open())
-					{
-						SaveSubWindowsLayout(layoutstream);
-					}
-					using (var placementstream = archive.CreateEntry("WindowPlacement.xml").Open())
-					{
-						WindowPlacementManager.SaveWindowPlacement(this, placementstream);
-					}
-				}
+					var placementEntry = new ZipEntry("WindowPlacement.xml");
+                    placementEntry.DateTime = DateTime.Now;
+					zipStream.PutNextEntry(placementEntry);
+                    WindowPlacementManager.SaveWindowPlacement(this, zipStream);
+                }
 
 
 				Utility.Logger.Add(2, path + " へウィンドウ レイアウトを保存しました。");

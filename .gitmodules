@@ -1,10 +1,6 @@
 [submodule "DockPanelSuite"]
 	path = DockPanelSuite
 	url = https://github.com/andanteyk/dockpanelsuite.git
-[submodule "SwfExtractor"]
-	path = SwfExtractor
-	url = https://github.com/andanteyk/SwfExtractor.git
-[submodule "GeckoBrowser"]
-	path = GeckoBrowser
-	url = https://github.com/CAWAS/GeckoBrowser.git
-	branch = master
+[submodule "Nekoxy"]
+	path = Nekoxy
+	url = https://github.com/CAWAS/Nekoxy.git

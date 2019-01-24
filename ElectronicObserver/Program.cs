@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,8 +18,6 @@ namespace ElectronicObserver
 		[STAThread]
 		static void Main(string[] args)
 		{
-
-			ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
 			Application.ThreadException += Application_ThreadException;
 

@@ -395,7 +395,7 @@ namespace ElectronicObserver.Window
 						dir.Refresh();
 						if (dir.Exists)
 						{
-							await Task.Delay(50);
+							await TaskEx.Delay(50);
 						}
 						else break;
 					}
@@ -407,7 +407,7 @@ namespace ElectronicObserver.Window
 				catch (Exception ex)
 				{
 					lastException = ex;
-					await Task.Delay(500);
+					await TaskEx.Delay(500);
 				}
 			}
 			if (trial == 4)

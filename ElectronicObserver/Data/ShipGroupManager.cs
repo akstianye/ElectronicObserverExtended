@@ -32,7 +32,7 @@ namespace ElectronicObserver.Data
 		[DataMember]
 		private IEnumerable<ShipGroupData> ShipGroupsSerializer
 		{
-			get { return ShipGroups.Values.OrderBy(g => g.ID); }
+			get { return ShipGroups.Values.OrderBy(g => g.ID).ToList(); }
 			set { ShipGroups = new IDDictionary<ShipGroupData>(value); }
 		}
 

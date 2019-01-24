@@ -113,7 +113,7 @@ namespace BrowserLib
 					try
 					{
 						if (Proxy == null) return;
-						await Task.Run(action);
+						await TaskEx.Run(action);
 						return;
 					}
 					catch (CommunicationException cex)
