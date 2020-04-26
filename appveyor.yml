@@ -1,4 +1,4 @@
-version: 4.5.0.0-extended.{build}
+version: 4.5.1.0-extended.{build}
 
 branches:
     only:
@@ -9,7 +9,7 @@ skip_tags: true
 assembly_info:
     patch: true
     file: AssemblyInfo.*
-    assembly_version: "4.5.0.{build}"
+    assembly_version: "4.5.1.{build}"
     assembly_file_version: "{version}"
     assembly_informational_version: "{version}"
 
