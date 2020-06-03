@@ -195,7 +195,19 @@ namespace ElectronicObserver.Window
 
 			LoadLayout(Configuration.Config.Life.LayoutFilePath);
 
+			if (MessageBox.Show(
+				@"EOE net40 variant is deprecated. This is the last version, please migrate.
+Click Yes to acknowledge (although this popup still appears every time).
+Click No if you need to file a petition, though unlikely they will be accepted.
 
+EOE net40 版本已结束支持。这是最后一个版本，请尽快迁移。
+单击 Yes 继续（本弹窗仍然会在每次启动时出现）。
+单击 No 上访，但大概率不被受理。",
+				"Deprecation Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning,
+				MessageBoxDefaultButton.Button1) == DialogResult.No)
+			{
+				System.Diagnostics.Process.Start("https://github.com/CAWAS/ElectronicObserverExtended/issues/4");
+			}
 
 			SoftwareInformation.CheckUpdate();
 
