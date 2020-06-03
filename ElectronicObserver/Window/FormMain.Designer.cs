@@ -91,6 +91,7 @@
             this.StripMenu_Tool_FleetImageGenerator = new System.Windows.Forms.ToolStripMenuItem();
             this.StripMenu_Tool_BaseAirCorpsSimulation = new System.Windows.Forms.ToolStripMenuItem();
             this.StripMenu_Tool_ExpChecker = new System.Windows.Forms.ToolStripMenuItem();
+            this.StripMenu_Tool_ExpeditionCheck = new System.Windows.Forms.ToolStripMenuItem();
             this.StripMenu_Debug = new System.Windows.Forms.ToolStripMenuItem();
             this.StripMenu_Debug_LoadAPIFromFile = new System.Windows.Forms.ToolStripMenuItem();
             this.StripMenu_Debug_LoadInitialAPI = new System.Windows.Forms.ToolStripMenuItem();
@@ -108,7 +109,7 @@
             this.StripStatus_Clock = new System.Windows.Forms.ToolStripStatusLabel();
             this.UIUpdateTimer = new System.Windows.Forms.Timer(this.components);
             this.MainDockPanel = new WeifenLuo.WinFormsUI.Docking.DockPanel();
-            this.StripMenu_Tool_ExpeditionCheck = new System.Windows.Forms.ToolStripMenuItem();
+            this.StripMenu_View_FleetPreset = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparatorPlugins = new System.Windows.Forms.ToolStripSeparator();
             this.StripMenu_Tool_PluginManager = new System.Windows.Forms.ToolStripMenuItem();
             this.StripMenu.SuspendLayout();
@@ -281,6 +282,7 @@
             this.StripMenu_View_Fleet,
             this.StripMenu_View_FleetOverview,
             this.StripMenu_View_ShipGroup,
+            this.StripMenu_View_FleetPreset,
             this.toolStripSeparator1,
             this.StripMenu_View_Dock,
             this.StripMenu_View_Arsenal,
@@ -598,6 +600,13 @@
             this.StripMenu_Tool_ExpChecker.Text = "必要経験値計算(&X)";
             this.StripMenu_Tool_ExpChecker.Click += new System.EventHandler(this.StripMenu_Tool_ExpChecker_Click);
             // 
+            // StripMenu_Tool_ExpeditionCheck
+            // 
+            this.StripMenu_Tool_ExpeditionCheck.Name = "StripMenu_Tool_ExpeditionCheck";
+            this.StripMenu_Tool_ExpeditionCheck.Size = new System.Drawing.Size(180, 22);
+            this.StripMenu_Tool_ExpeditionCheck.Text = "遠征可否チェック(&M)";
+            this.StripMenu_Tool_ExpeditionCheck.Click += new System.EventHandler(this.StripMenu_Tool_ExpeditionCheck_Click);
+            // 
             // StripMenu_Debug
             // 
             this.StripMenu_Debug.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -735,12 +744,12 @@
             this.MainDockPanel.Size = new System.Drawing.Size(640, 434);
             this.MainDockPanel.TabIndex = 0;
             // 
-            // StripMenu_Tool_ExpeditionCheck
+            // StripMenu_View_FleetPreset
             // 
-            this.StripMenu_Tool_ExpeditionCheck.Name = "StripMenu_Tool_ExpeditionCheck";
-            this.StripMenu_Tool_ExpeditionCheck.Size = new System.Drawing.Size(180, 22);
-            this.StripMenu_Tool_ExpeditionCheck.Text = "遠征可否チェック(&M)";
-            this.StripMenu_Tool_ExpeditionCheck.Click += new System.EventHandler(this.StripMenu_Tool_ExpeditionCheck_Click);
+            this.StripMenu_View_FleetPreset.Name = "StripMenu_View_FleetPreset";
+            this.StripMenu_View_FleetPreset.Size = new System.Drawing.Size(182, 22);
+            this.StripMenu_View_FleetPreset.Text = "編成プリセット(&P)";
+            this.StripMenu_View_FleetPreset.Click += new System.EventHandler(this.StripMenu_View_FleetPreset_Click);
 
             // 
             // toolStripSeparatorPlugins
@@ -754,7 +763,6 @@
             this.StripMenu_Tool_PluginManager.Size = new System.Drawing.Size(200, 26);
             this.StripMenu_Tool_PluginManager.Text = "&Plugins";
             this.StripMenu_Tool_PluginManager.Click += new System.EventHandler(this.pluginsToolStripMenuItem_Click);
-
             // 
             // FormMain
             // 
@@ -863,8 +871,9 @@
 		private System.Windows.Forms.ToolStripMenuItem StripMenu_File_Notification_MuteAll;
 		private System.Windows.Forms.ToolStripMenuItem StripMenu_Tool_ExpChecker;
         private System.Windows.Forms.ToolStripMenuItem StripMenu_Tool_ExpeditionCheck;
+        private System.Windows.Forms.ToolStripMenuItem StripMenu_View_FleetPreset;
 
         private System.Windows.Forms.ToolStripSeparator toolStripSeparatorPlugins;
         private System.Windows.Forms.ToolStripMenuItem StripMenu_Tool_PluginManager;
-    }
+	}
 }

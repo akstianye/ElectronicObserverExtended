@@ -1,4 +1,4 @@
-﻿using Codeplex.Data;
+﻿using DynaJson;
 using ElectronicObserver.Data;
 using ElectronicObserver.Notifier;
 using ElectronicObserver.Observer;
@@ -66,6 +66,7 @@ namespace ElectronicObserver.Window
 		public FormWindowCapture fWindowCapture;
 		public FormBaseAirCorps fBaseAirCorps;
 		public FormJson fJson;
+		public FormFleetPreset fFleetPreset;
 
 		#endregion
 
@@ -138,6 +139,7 @@ namespace ElectronicObserver.Window
 			StripMenu_WindowCapture.Image = ResourceManager.Instance.Icons.Images[(int)ResourceManager.IconContent.FormWindowCapture];
 			StripMenu_View_BaseAirCorps.Image = ResourceManager.Instance.Icons.Images[(int)ResourceManager.IconContent.FormBaseAirCorps];
 			StripMenu_View_Json.Image = ResourceManager.Instance.Icons.Images[(int)ResourceManager.IconContent.FormJson];
+			StripMenu_View_FleetPreset.Image = ResourceManager.Instance.Icons.Images[(int)ResourceManager.IconContent.FormFleetPreset];
 
 			StripMenu_Tool_EquipmentList.Image = ResourceManager.Instance.Icons.Images[(int)ResourceManager.IconContent.FormEquipmentList];
 			StripMenu_Tool_DropRecord.Image = ResourceManager.Instance.Icons.Images[(int)ResourceManager.IconContent.FormDropRecord];
@@ -187,6 +189,7 @@ namespace ElectronicObserver.Window
 			SubForms.Add(fWindowCapture = new FormWindowCapture(this));
 			SubForms.Add(fBaseAirCorps = new FormBaseAirCorps(this));
 			SubForms.Add(fJson = new FormJson(this));
+			SubForms.Add(fFleetPreset = new FormFleetPreset(this));
 
 			await LoadPlugins();
 
@@ -513,6 +516,8 @@ namespace ElectronicObserver.Window
 					return fBaseAirCorps;
 				case "Json":
 					return fJson;
+				case "FleetPreset":
+					return fFleetPreset;
 				default:
 					if (persistString.StartsWith("ShipGroup"))
 					{
@@ -897,7 +902,7 @@ namespace ElectronicObserver.Window
 						using (StreamReader sr = new StreamReader(ofd.FileName))
 						{
 
-							dynamic json = DynamicJson.Parse(sr.ReadToEnd().Remove(0, 7));
+							dynamic json = JsonObject.Parse(sr.ReadToEnd().Remove(0, 7));
 
 							foreach (dynamic elem in json.api_data.api_mst_ship)
 							{
@@ -950,7 +955,7 @@ namespace ElectronicObserver.Window
 						using (StreamReader sr = new StreamReader(ofd.FileName))
 						{
 
-							dynamic json = DynamicJson.Parse(sr.ReadToEnd().Remove(0, 7));
+							dynamic json = JsonObject.Parse(sr.ReadToEnd().Remove(0, 7));
 
 							foreach (dynamic elem in json.api_data.api_mst_ship)
 							{
@@ -1565,8 +1570,10 @@ namespace ElectronicObserver.Window
 			ShowForm(fJson);
 		}
 
-
-
+		private void StripMenu_View_FleetPreset_Click(object sender, EventArgs e)
+		{
+			ShowForm(fFleetPreset);
+		}
 
 
 		#endregion
