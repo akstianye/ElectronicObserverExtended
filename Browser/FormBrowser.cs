@@ -1268,12 +1268,24 @@ namespace Browser
 
 		public byte[] TakeScreenShotAsPngBytes()
 		{
-			var screenShot = Task.Run(TakeScreenShot);
-			using (var stream = new MemoryStream())
+			try
 			{
-				screenShot.Result.Save(stream, ImageFormat.Png);
-				return stream.ToArray();
+				var screenShot = Task.Run(TakeScreenShot).Result; // Blocks here
+				if (screenShot != null)
+				{
+					using (var stream = new MemoryStream())
+					{
+						screenShot.Save(stream, ImageFormat.Png);
+						return stream.ToArray();
+					}
+				}
 			}
+			catch (Exception ex)
+			{
+				SendErrorReport(ex.ToString(), "Failed to TakeScreenShotAsPngBytes.");
+			}
+
+			return new byte[0];
 		}
 
 		#region 呪文
