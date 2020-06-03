@@ -25,44 +25,32 @@ before_build:
     - copy NUL output-template\Plugins\plugin_dir
 
 build_script:
-    - REM ================ net45 ================
     - git submodule update --init --recursive
     - nuget restore
     - msbuild ElectronicObserver.sln /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /p:Configuration=Release /m
     - REM ================ Package CEF flavors ================
-    - xcopy /E /Y output-template output-net45-cef-full\
-    - xcopy /E /Y output\ElectronicObserver output-net45-cef-full\
-    - xcopy /E /Y output\Browser output-net45-cef-full\
-    - xcopy /E output-net45-cef-full output-net45-cef\
-    - rmdir /S /Q output-net45-cef\x86
-    - rmdir /S /Q output-net45-cef\x64
+    - xcopy /E /Y output-template output-cef-full\
+    - xcopy /E /Y output\ElectronicObserver output-cef-full\
+    - xcopy /E /Y output\Browser output-cef-full\
+    - xcopy /E output-cef-full output-cef\
+    - rmdir /S /Q output-cef\x86
+    - rmdir /S /Q output-cef\x64
     - REM ================ Package Gecko flavors ================
-    - xcopy /E /Y output-template output-net45-gecko-full\
-    - xcopy /E /Y output\ElectronicObserver output-net45-gecko-full\
-    - xcopy /E /Y output\GeckoBrowser output-net45-gecko-full\
-    - xcopy /E output-net45-gecko-full output-net45-gecko\
-    - rmdir /S /Q output-net45-gecko\Firefox
-    - REM ================ net40 ================
-    - msbuild ElectronicObserver.sln /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /t:Clean
-    - git checkout extended-net40
-    - xcopy /E output-template output-net40\
-    - git submodule sync
-    - git submodule update --init --recursive
-    - nuget restore
-    - msbuild ElectronicObserver.sln /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
-    - ps: if (!((git branch --contains $env:APPVEYOR_REPO_COMMIT) -like '*extended-net40')) { exit -1 }
+    - xcopy /E /Y output-template output-gecko-full\
+    - xcopy /E /Y output\ElectronicObserver output-gecko-full\
+    - xcopy /E /Y output\GeckoBrowser output-gecko-full\
+    - xcopy /E output-gecko-full output-gecko\
+    - rmdir /S /Q output-gecko\Firefox
 
 artifacts:
-    - path: output-net45-cef-full
+    - path: output-cef-full
       name: 74eoe-cef-full-$(APPVEYOR_BUILD_VERSION)
-    - path: output-net45-cef
+    - path: output-cef
       name: 74eoe-cef-$(APPVEYOR_BUILD_VERSION)
-    - path: output-net45-gecko-full
+    - path: output-gecko-full
       name: 74eoe-gecko-full-$(APPVEYOR_BUILD_VERSION)
-    - path: output-net45-gecko
+    - path: output-gecko
       name: 74eoe-gecko-$(APPVEYOR_BUILD_VERSION)
-    - path: output-net40
-      name: 74eoe-net40-$(APPVEYOR_BUILD_VERSION)
 
 deploy:
   provider: GitHub
