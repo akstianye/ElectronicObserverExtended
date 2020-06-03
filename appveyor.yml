@@ -6,6 +6,9 @@ branches:
 
 skip_tags: true
 
+skip_commits:
+    message: /\[chore\]/
+
 assembly_info:
     patch: true
     file: AssemblyInfo.*
