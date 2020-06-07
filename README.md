@@ -65,7 +65,7 @@ To maintain compatibility with plugins developed for tsanie's fork, ElectronicOb
 
 ## 使用しているライブラリ
 
-* [DynamicJson](http://dynamicjson.codeplex.com/) (JSON データの読み書き) - [Ms-PL](https://github.com/CAWAS/ElectronicObserverExtended/blob/master/Licenses/Ms-PL.txt)
+* [DynamicJson](http://dynamicjson.codeplex.com/) (JSON データの読み書き) - [Ms-PL](https://github.com/CAWAS/ElectronicObserverExtended/blob/extended/Licenses/Ms-PL.txt)
 * [DynaJson](https://github.com/fujieda/DynaJson) (JSON データの読み書き) - [MIT License](https://github.com/andanteyk/ElectronicObserver/blob/master/Licenses/DynaJson.txt)
 * [DockPanel Suite](http://dockpanelsuite.com/) (ウィンドウレイアウト) - [MIT License](https://github.com/andanteyk/ElectronicObserver/blob/master/Licenses/DockPanelSuite.txt)
 * [Nekoxy](https://github.com/veigr/Nekoxy) (通信キャプチャ) - [MIT License](https://github.com/andanteyk/ElectronicObserver/blob/master/Licenses/Nekoxy.txt)
