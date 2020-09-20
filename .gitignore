@@ -170,6 +170,7 @@ packages/
 /ElectronicObserver/BattleLog
 /ElectronicObserver/BrowserCache
 /ElectronicObserver/ScreenShot
+/ElectronicObserver/GPUCache
 
 output/
 output-net40/
