@@ -52,7 +52,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(38, 15);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "パス：";
+			this.label1.Text = "路径:";
 			// 
 			// FilePath
 			// 
@@ -84,7 +84,7 @@
 			this.IsLoop.Name = "IsLoop";
 			this.IsLoop.Size = new System.Drawing.Size(55, 19);
 			this.IsLoop.TabIndex = 3;
-			this.IsLoop.Text = "ループ";
+			this.IsLoop.Text = "循环";
 			this.IsLoop.UseVisualStyleBackColor = true;
 			// 
 			// LoopHeadPosition
@@ -144,7 +144,7 @@
 			this.ButtonCancel.Name = "ButtonCancel";
 			this.ButtonCancel.Size = new System.Drawing.Size(75, 23);
 			this.ButtonCancel.TabIndex = 9;
-			this.ButtonCancel.Text = "キャンセル";
+			this.ButtonCancel.Text = "取消";
 			this.ButtonCancel.UseVisualStyleBackColor = true;
 			this.ButtonCancel.Click += new System.EventHandler(this.ButtonCancel_Click);
 			// 
@@ -161,7 +161,7 @@
 			// 
 			// OpenMusicDialog
 			// 
-			this.OpenMusicDialog.Title = "音楽ファイルを開く";
+			this.OpenMusicDialog.Title = "打开音乐文件";
 			// 
 			// FilePathToDirectory
 			// 

@@ -73,7 +73,7 @@
             // CheckView_Name
             // 
             this.CheckView_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.CheckView_Name.HeaderText = "遠征名";
+            this.CheckView_Name.HeaderText = "远征名";
             this.CheckView_Name.Name = "CheckView_Name";
             this.CheckView_Name.ReadOnly = true;
             this.CheckView_Name.Width = 68;
@@ -81,7 +81,7 @@
             // CheckView_Fleet2
             // 
             this.CheckView_Fleet2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CheckView_Fleet2.HeaderText = "第2艦隊";
+            this.CheckView_Fleet2.HeaderText = "第2舰队";
             this.CheckView_Fleet2.Name = "CheckView_Fleet2";
             this.CheckView_Fleet2.ReadOnly = true;
             this.CheckView_Fleet2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -89,7 +89,7 @@
             // CheckView_Fleet3
             // 
             this.CheckView_Fleet3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CheckView_Fleet3.HeaderText = "第3艦隊";
+            this.CheckView_Fleet3.HeaderText = "第3舰队";
             this.CheckView_Fleet3.Name = "CheckView_Fleet3";
             this.CheckView_Fleet3.ReadOnly = true;
             this.CheckView_Fleet3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -97,7 +97,7 @@
             // CheckView_Fleet4
             // 
             this.CheckView_Fleet4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CheckView_Fleet4.HeaderText = "第4艦隊";
+            this.CheckView_Fleet4.HeaderText = "第4舰队";
             this.CheckView_Fleet4.Name = "CheckView_Fleet4";
             this.CheckView_Fleet4.ReadOnly = true;
             this.CheckView_Fleet4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -117,7 +117,7 @@
             this.Controls.Add(this.CheckView);
             this.Font = new System.Drawing.Font("Meiryo UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.Name = "DialogExpeditionCheck";
-            this.Text = "遠征可否チェック";
+            this.Text = "远征可否检查";
             this.Activated += new System.EventHandler(this.DialogExpeditionCheck_Activated);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DialogExpeditionCheck_FormClosed);
             this.Load += new System.EventHandler(this.DialogExpeditionCheck_Load);

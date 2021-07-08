@@ -37,7 +37,7 @@
 			this.Name = "DialogWhitecap";
 			this.ShowIcon = false;
 			this.ShowInTaskbar = false;
-			this.Text = "癒し処「白波」";
+			this.Text = "治愈处「白波」";
 			this.Load += new System.EventHandler(this.DialogWhitecap_Load);
 			this.Paint += new System.Windows.Forms.PaintEventHandler(this.DialogWhitecap_Paint);
 			this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.DialogWhitecap_MouseClick);

@@ -64,7 +64,7 @@
             this.ButtonCancel.Name = "ButtonCancel";
             this.ButtonCancel.Size = new System.Drawing.Size(75, 23);
             this.ButtonCancel.TabIndex = 3;
-            this.ButtonCancel.Text = "キャンセル";
+            this.ButtonCancel.Text = "取消";
             this.ButtonCancel.UseVisualStyleBackColor = true;
             this.ButtonCancel.Click += new System.EventHandler(this.ButtonCancel_Click);
             // 
@@ -116,7 +116,7 @@
             // ColumnView_AutoSize
             // 
             this.ColumnView_AutoSize.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ColumnView_AutoSize.HeaderText = "自動サイズ";
+            this.ColumnView_AutoSize.HeaderText = "自动尺寸";
             this.ColumnView_AutoSize.Name = "ColumnView_AutoSize";
             this.ColumnView_AutoSize.Width = 66;
             // 
@@ -146,7 +146,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 15);
             this.label1.TabIndex = 5;
-            this.label1.Text = "列の固定: ";
+            this.label1.Text = "固定列: ";
             // 
             // ScrLkColumnCount
             // 
@@ -196,7 +196,7 @@
             this.MinimizeBox = false;
             this.Name = "DialogShipGroupColumnFilter";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "列の表示設定";
+            this.Text = "列的显示设置";
             this.Load += new System.EventHandler(this.DialogShipGroupColumnFilter_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ColumnView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ScrLkColumnCount)).EndInit();

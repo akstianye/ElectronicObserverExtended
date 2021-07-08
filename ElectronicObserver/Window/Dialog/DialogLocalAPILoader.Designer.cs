@@ -59,7 +59,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(289, 30);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "必ずオフラインの状態で操作してください。\r\nこの機能はデバッグ専用であるため、動作は保証できません。";
+			this.label1.Text = "请务必在离线状态下操作。\r\n因为这个功能是调试专用的，所以不能保证运行。";
 			// 
 			// APIList
 			// 
@@ -111,7 +111,7 @@
 			this.ButtonCancel.Name = "ButtonCancel";
 			this.ButtonCancel.Size = new System.Drawing.Size(75, 23);
 			this.ButtonCancel.TabIndex = 7;
-			this.ButtonCancel.Text = "キャンセル";
+			this.ButtonCancel.Text = "取消";
 			this.ButtonCancel.UseVisualStyleBackColor = true;
 			this.ButtonCancel.Click += new System.EventHandler(this.ButtonCancel_Click);
 			// 
@@ -132,7 +132,7 @@
 			this.ButtonOpen.Name = "ButtonOpen";
 			this.ButtonOpen.Size = new System.Drawing.Size(75, 23);
 			this.ButtonOpen.TabIndex = 6;
-			this.ButtonOpen.Text = "開く";
+			this.ButtonOpen.Text = "打开";
 			this.ButtonOpen.UseVisualStyleBackColor = true;
 			this.ButtonOpen.Click += new System.EventHandler(this.ButtonOpen_Click);
 			// 
@@ -174,7 +174,7 @@
 			// 
 			this.FileOpener.Filter = "JSON|*.json;*.js|File|*";
 			this.FileOpener.RestoreDirectory = true;
-			this.FileOpener.Title = "ファイルを開く";
+			this.FileOpener.Title = "打开文件";
 			// 
 			// DialogLocalAPILoader
 			// 
@@ -192,7 +192,7 @@
 			this.Name = "DialogLocalAPILoader";
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "ファイルからAPIをロード";
+			this.Text = "从文件中加载API";
 			this.Load += new System.EventHandler(this.DialogLocalAPILoader_Load);
 			((System.ComponentModel.ISupportInitialize)(this.PictureWarning)).EndInit();
 			this.panel1.ResumeLayout(false);

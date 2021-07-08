@@ -56,7 +56,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(43, 15);
 			this.label1.TabIndex = 2;
-			this.label1.Text = "開発：";
+			this.label1.Text = "开发：";
 			// 
 			// TextAuthor
 			// 
@@ -76,7 +76,7 @@
 			this.ButtonClose.Name = "ButtonClose";
 			this.ButtonClose.Size = new System.Drawing.Size(75, 23);
 			this.ButtonClose.TabIndex = 0;
-			this.ButtonClose.Text = "閉じる";
+			this.ButtonClose.Text = "关闭";
 			this.ButtonClose.UseVisualStyleBackColor = true;
 			this.ButtonClose.Click += new System.EventHandler(this.ButtonClose_Click);
 			// 
@@ -99,7 +99,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(200, 15);
 			this.label2.TabIndex = 4;
-			this.label2.Text = "配布元(不具合報告・連絡はこちらへ)：";
+			this.label2.Text = "分发商(故障报告·联络请到这里):";
 			// 
 			// labelExtended
 			// 
@@ -108,7 +108,7 @@
 			this.labelExtended.Name = "labelExtended";
 			this.labelExtended.Size = new System.Drawing.Size(79, 15);
 			this.labelExtended.TabIndex = 6;
-			this.labelExtended.Text = "拡張版開発：";
+			this.labelExtended.Text = "扩展版开发：";
 			// 
 			// TextExtended
 			// 
@@ -142,7 +142,7 @@
 			this.Name = "DialogVersion";
 			this.ShowInTaskbar = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "バージョン";
+			this.Text = "版本";
 			this.Load += new System.EventHandler(this.DialogVersion_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();

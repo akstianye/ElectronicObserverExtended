@@ -104,7 +104,7 @@
             this.AdmiralComment.Padding = new System.Windows.Forms.Padding(0, 3, 0, 2);
             this.AdmiralComment.Size = new System.Drawing.Size(74, 20);
             this.AdmiralComment.TabIndex = 1;
-            this.AdmiralComment.Text = "(提督コメント)";
+            this.AdmiralComment.Text = "(提督头衔)";
             this.AdmiralComment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AdmiralComment.UseMnemonic = false;
             // 
@@ -175,7 +175,7 @@
             this.ShipCount.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.ShipCount.Size = new System.Drawing.Size(66, 20);
             this.ShipCount.TabIndex = 0;
-            this.ShipCount.Text = "(艦船数)";
+            this.ShipCount.Text = "(舰船数)";
             // 
             // EquipmentCount
             // 
@@ -185,7 +185,7 @@
             this.EquipmentCount.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.EquipmentCount.Size = new System.Drawing.Size(66, 20);
             this.EquipmentCount.TabIndex = 1;
-            this.EquipmentCount.Text = "(装備数)";
+            this.EquipmentCount.Text = "(装备数)";
             // 
             // InstantRepair
             // 
@@ -195,7 +195,7 @@
             this.InstantRepair.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.InstantRepair.Size = new System.Drawing.Size(54, 20);
             this.InstantRepair.TabIndex = 1;
-            this.InstantRepair.Text = "(修復)";
+            this.InstantRepair.Text = "(修复)";
             // 
             // InstantConstruction
             // 
@@ -215,7 +215,7 @@
             this.DevelopmentMaterial.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.DevelopmentMaterial.Size = new System.Drawing.Size(54, 20);
             this.DevelopmentMaterial.TabIndex = 3;
-            this.DevelopmentMaterial.Text = "(開発)";
+            this.DevelopmentMaterial.Text = "(开发)";
             // 
             // ModdingMaterial
             // 
@@ -269,7 +269,7 @@
             this.Ammo.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.Ammo.Size = new System.Drawing.Size(54, 20);
             this.Ammo.TabIndex = 2;
-            this.Ammo.Text = "(弾薬)";
+            this.Ammo.Text = "(弹药)";
             this.Ammo.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Resource_MouseClick);
             this.Ammo.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.Resource_MouseDoubleClick);
             // 
@@ -281,7 +281,7 @@
             this.Steel.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.Steel.Size = new System.Drawing.Size(54, 20);
             this.Steel.TabIndex = 3;
-            this.Steel.Text = "(鋼材)";
+            this.Steel.Text = "(钢材)";
             this.Steel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Resource_MouseClick);
             this.Steel.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.Resource_MouseDoubleClick);
             // 
@@ -293,7 +293,7 @@
             this.Bauxite.Padding = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.Bauxite.Size = new System.Drawing.Size(54, 20);
             this.Bauxite.TabIndex = 4;
-            this.Bauxite.Text = "(軽銀)";
+            this.Bauxite.Text = "(铝)";
             this.Bauxite.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Resource_MouseClick);
             this.Bauxite.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.Resource_MouseDoubleClick);
             // 

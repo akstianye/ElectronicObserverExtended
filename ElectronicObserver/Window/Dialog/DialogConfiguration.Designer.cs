@@ -342,7 +342,7 @@
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(285, 15);
             this.label19.TabIndex = 13;
-            this.label19.Text = "* 浏览器的通信设置将在您重新启动时反映出来";
+            this.label19.Text = "* 浏览器的通信设置将在您重新启动时生效";
             // 
             // Connection_UpstreamProxyAddress
             // 
@@ -441,7 +441,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(201, 15);
             this.label4.TabIndex = 6;
-            this.label4.Text = "＊可以是巨大的尺寸。";
+            this.label4.Text = "＊可能会变得非常大。";
             // 
             // Connection_PanelSaveData
             // 
@@ -566,7 +566,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "港口：";
+            this.label1.Text = "端口：";
             // 
             // tabPage2
             // 
@@ -2159,7 +2159,7 @@
             this.FormBrowser_ForceColorProfile.Size = new System.Drawing.Size(216, 19);
             this.FormBrowser_ForceColorProfile.TabIndex = 16;
             this.FormBrowser_ForceColorProfile.Text = "将颜色配置文件固定为sRGB*";
-            this.ToolTipInfo.SetToolTip(this.FormBrowser_ForceColorProfile, "如果浏览器的颜色不正常，启用的话可能就能解决了。\r\n重新启动的话就会反映出来。");
+            this.ToolTipInfo.SetToolTip(this.FormBrowser_ForceColorProfile, "如果浏览器的颜色不正常，启用的话可能就能解决了。\r\n重新启动生效。");
             this.FormBrowser_ForceColorProfile.UseVisualStyleBackColor = true;
             // 
             // FormBrowser_PreserveDrawingBuffer
@@ -2170,7 +2170,7 @@
             this.FormBrowser_PreserveDrawingBuffer.Size = new System.Drawing.Size(145, 19);
             this.FormBrowser_PreserveDrawingBuffer.TabIndex = 15;
             this.FormBrowser_PreserveDrawingBuffer.Text = "保持绘图缓冲器 *";
-            this.ToolTipInfo.SetToolTip(this.FormBrowser_PreserveDrawingBuffer, "绘图系统有问题的情况下有效的话可能会改善。\r\n无效的话有提高性能的可能性。\r\n* 这个变更在重新启动后被应用。\r" +
+            this.ToolTipInfo.SetToolTip(this.FormBrowser_PreserveDrawingBuffer, "绘图系统有问题的情况下有效的话可能会改善。\r\n无效的话有提高性能的可能性。\r\n* 这个变更在重新启动后生效。\r" +
         "\n");
             this.FormBrowser_PreserveDrawingBuffer.UseVisualStyleBackColor = true;
             // 
@@ -2182,7 +2182,7 @@
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(241, 15);
             this.label20.TabIndex = 14;
-            this.label20.Text = "* 有标记的设置在重新启动时会被反映出来。";
+            this.label20.Text = "* 有标记的设置在重新启动后生效。";
             // 
             // FormBrowser_HardwareAccelerationEnabled
             // 
@@ -2193,7 +2193,7 @@
             this.FormBrowser_HardwareAccelerationEnabled.TabIndex = 13;
             this.FormBrowser_HardwareAccelerationEnabled.Text = "启用硬件加速器 *";
             this.ToolTipInfo.SetToolTip(this.FormBrowser_HardwareAccelerationEnabled, "指定绘图是否使用GPU。\r\n有效的话可能会提高性能。\r\n在录像·送信画面不映的情况下，如果无效的话可能会得到改善。" +
-		"\r\n* 这个变更在重新启动后被应用。\r\n");
+		"\r\n* 这个变更在重新启动后生效。\r\n");
             this.FormBrowser_HardwareAccelerationEnabled.UseVisualStyleBackColor = true;
             // 
             // FormBrowser_IsDMMreloadDialogDestroyable
@@ -2238,7 +2238,7 @@
             this.FormBrowser_ZoomFit.Name = "FormBrowser_ZoomFit";
             this.FormBrowser_ZoomFit.Size = new System.Drawing.Size(61, 19);
             this.FormBrowser_ZoomFit.TabIndex = 5;
-            this.FormBrowser_ZoomFit.Text = "确切地";
+            this.FormBrowser_ZoomFit.Text = "自适应";
             this.ToolTipInfo.SetToolTip(this.FormBrowser_ZoomFit, "如果启用，它将自动放大和缩小以适应屏幕。");
             this.FormBrowser_ZoomFit.UseVisualStyleBackColor = true;
             // 
@@ -2438,7 +2438,7 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(73, 15);
             this.label15.TabIndex = 1;
-            this.label15.Text = "变焦倍率：";
+            this.label15.Text = "缩放比例：";
             // 
             // tabPage21
             // 
@@ -2547,7 +2547,7 @@
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(253, 15);
             this.label33.TabIndex = 0;
-            this.label33.Text = "(非表示。请启用调试菜单。)";
+            this.label33.Text = "(未显示,请启用调试菜单。)";
             // 
             // tabPage11
             // 

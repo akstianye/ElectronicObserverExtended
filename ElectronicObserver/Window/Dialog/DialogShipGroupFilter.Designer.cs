@@ -173,7 +173,7 @@
 			// 
 			this.ExpressionView_Enabled.HeaderText = "○";
 			this.ExpressionView_Enabled.Name = "ExpressionView_Enabled";
-			this.ExpressionView_Enabled.ToolTipText = "有効/無効";
+			this.ExpressionView_Enabled.ToolTipText = "有效/无效";
 			this.ExpressionView_Enabled.Width = 20;
 			// 
 			// ExpressionView_ExternalAndOr
@@ -189,7 +189,7 @@
 			// 
 			this.ExpressionView_Inverse.HeaderText = "否";
 			this.ExpressionView_Inverse.Name = "ExpressionView_Inverse";
-			this.ExpressionView_Inverse.ToolTipText = "条件を反転するか";
+			this.ExpressionView_Inverse.ToolTipText = "或者反转条件";
 			this.ExpressionView_Inverse.Width = 20;
 			// 
 			// ExpressionView_InternalAndOr
@@ -313,7 +313,7 @@
 			// 
 			this.ExpressionDetailView_Enabled.HeaderText = "○";
 			this.ExpressionDetailView_Enabled.Name = "ExpressionDetailView_Enabled";
-			this.ExpressionDetailView_Enabled.ToolTipText = "有効/無効";
+			this.ExpressionDetailView_Enabled.ToolTipText = "有效/无效";
 			this.ExpressionDetailView_Enabled.Width = 20;
 			// 
 			// ExpressionDetailView_LeftOperand
@@ -391,7 +391,7 @@
 			this.Description.Name = "Description";
 			this.Description.Size = new System.Drawing.Size(41, 15);
 			this.Description.TabIndex = 3;
-			this.Description.Text = "(説明)";
+			this.Description.Text = "(说明)";
 			// 
 			// ExpressionDetail_Delete
 			// 
@@ -409,7 +409,7 @@
 			this.ExpressionDetail_Edit.Name = "ExpressionDetail_Edit";
 			this.ExpressionDetail_Edit.Size = new System.Drawing.Size(75, 23);
 			this.ExpressionDetail_Edit.TabIndex = 5;
-			this.ExpressionDetail_Edit.Text = "上書き";
+			this.ExpressionDetail_Edit.Text = "重写";
 			this.ExpressionDetail_Edit.UseVisualStyleBackColor = true;
 			this.ExpressionDetail_Edit.Click += new System.EventHandler(this.ExpressionDetail_Edit_Click);
 			// 
@@ -439,7 +439,7 @@
 			this.ButtonCancel.Name = "ButtonCancel";
 			this.ButtonCancel.Size = new System.Drawing.Size(75, 23);
 			this.ButtonCancel.TabIndex = 3;
-			this.ButtonCancel.Text = "キャンセル";
+			this.ButtonCancel.Text = "取消";
 			this.ButtonCancel.UseVisualStyleBackColor = true;
 			this.ButtonCancel.Click += new System.EventHandler(this.ButtonCancel_Click);
 			// 
@@ -476,7 +476,7 @@
 			this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
 			this.tabPage1.Size = new System.Drawing.Size(616, 375);
 			this.tabPage1.TabIndex = 0;
-			this.tabPage1.Text = "フィルタ";
+			this.tabPage1.Text = "过滤器";
 			this.tabPage1.UseVisualStyleBackColor = true;
 			// 
 			// tabPage2
@@ -492,7 +492,7 @@
 			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
 			this.tabPage2.Size = new System.Drawing.Size(616, 375);
 			this.tabPage2.TabIndex = 1;
-			this.tabPage2.Text = "包含/除外リスト";
+			this.tabPage2.Text = "包含/排除名单";
 			this.tabPage2.UseVisualStyleBackColor = true;
 			// 
 			// ConvertToExpression
@@ -502,8 +502,8 @@
 			this.ConvertToExpression.Name = "ConvertToExpression";
 			this.ConvertToExpression.Size = new System.Drawing.Size(75, 23);
 			this.ConvertToExpression.TabIndex = 3;
-			this.ConvertToExpression.Text = "式に変換";
-			this.toolTip1.SetToolTip(this.ConvertToExpression, "包含/除外リストを式に変換します。\r\n逆変換はできないのでご注意ください。");
+			this.ConvertToExpression.Text = "转换成公式";
+			this.toolTip1.SetToolTip(this.ConvertToExpression, "将包含/排除列表转换成公式。\r\n请注意不能进行逆变换。");
 			this.ConvertToExpression.UseVisualStyleBackColor = true;
 			this.ConvertToExpression.Click += new System.EventHandler(this.ConvertToExpression_Click);
 			// 
@@ -514,8 +514,8 @@
 			this.OptimizeConstFilter.Name = "OptimizeConstFilter";
 			this.OptimizeConstFilter.Size = new System.Drawing.Size(75, 23);
 			this.OptimizeConstFilter.TabIndex = 2;
-			this.OptimizeConstFilter.Text = "最適化";
-			this.toolTip1.SetToolTip(this.OptimizeConstFilter, "存在しない艦娘をリストから削除します。");
+			this.OptimizeConstFilter.Text = "最优化";
+			this.toolTip1.SetToolTip(this.OptimizeConstFilter, "将不存在的舰娘从列表中删除。");
 			this.OptimizeConstFilter.UseVisualStyleBackColor = true;
 			this.OptimizeConstFilter.Click += new System.EventHandler(this.OptimizeConstFilter_Click);
 			// 
@@ -527,7 +527,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(306, 30);
 			this.label1.TabIndex = 0;
-			this.label1.Text = "フィルタの内容にかかわらず、追加/除外される艦娘のリストです。\r\n追加はグループ本体の右クリックメニューから行ってください。";
+			this.label1.Text = "与过滤器的内容无关，被追加/排除的舰娘的列表。\r\n添加请从组主体的右键菜单进行。";
 			// 
 			// ClearConstFilter
 			// 
@@ -536,8 +536,8 @@
 			this.ClearConstFilter.Name = "ClearConstFilter";
 			this.ClearConstFilter.Size = new System.Drawing.Size(75, 23);
 			this.ClearConstFilter.TabIndex = 4;
-			this.ClearConstFilter.Text = "初期化";
-			this.toolTip1.SetToolTip(this.ClearConstFilter, "リストの内容をすべて削除します。");
+			this.ClearConstFilter.Text = "初始化";
+			this.toolTip1.SetToolTip(this.ClearConstFilter, "删除列表的所有内容。");
 			this.ClearConstFilter.UseVisualStyleBackColor = true;
 			this.ClearConstFilter.Click += new System.EventHandler(this.ClearConstFilter_Click);
 			// 
@@ -580,7 +580,7 @@
 			// ConstFilterView_Name
 			// 
 			this.ConstFilterView_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.ConstFilterView_Name.HeaderText = "艦名";
+			this.ConstFilterView_Name.HeaderText = "舰名";
 			this.ConstFilterView_Name.Name = "ConstFilterView_Name";
 			this.ConstFilterView_Name.ReadOnly = true;
 			this.ConstFilterView_Name.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -618,8 +618,8 @@
 			this.ConstFilterSelector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.ConstFilterSelector.FormattingEnabled = true;
 			this.ConstFilterSelector.Items.AddRange(new object[] {
-			"包含リスト",
-			"除外リスト"});
+			"包含列表",
+			"排除名单"});
 			this.ConstFilterSelector.Location = new System.Drawing.Point(8, 42);
 			this.ConstFilterSelector.Name = "ConstFilterSelector";
 			this.ConstFilterSelector.Size = new System.Drawing.Size(357, 23);
@@ -633,7 +633,7 @@
 			this.ButtonMenu.Name = "ButtonMenu";
 			this.ButtonMenu.Size = new System.Drawing.Size(75, 23);
 			this.ButtonMenu.TabIndex = 1;
-			this.ButtonMenu.Text = "メニュー ▼";
+			this.ButtonMenu.Text = "菜单 ▼";
 			this.ButtonMenu.UseVisualStyleBackColor = true;
 			this.ButtonMenu.Click += new System.EventHandler(this.ButtonMenu_Click);
 			// 
@@ -649,14 +649,14 @@
 			// 
 			this.SubMenu_ImportFilter.Name = "SubMenu_ImportFilter";
 			this.SubMenu_ImportFilter.Size = new System.Drawing.Size(188, 22);
-			this.SubMenu_ImportFilter.Text = "フィルタのインポート(&I)";
+			this.SubMenu_ImportFilter.Text = "过滤器的导入(&I)";
 			this.SubMenu_ImportFilter.Click += new System.EventHandler(this.Menu_ImportFilter_Click);
 			// 
 			// SubMenu_ExportFilter
 			// 
 			this.SubMenu_ExportFilter.Name = "SubMenu_ExportFilter";
 			this.SubMenu_ExportFilter.Size = new System.Drawing.Size(188, 22);
-			this.SubMenu_ExportFilter.Text = "フィルタのエクスポート(&E)";
+			this.SubMenu_ExportFilter.Text = "导出过滤器(&E)";
 			this.SubMenu_ExportFilter.Click += new System.EventHandler(this.Menu_ExportFilter_Click);
 			// 
 			// DialogShipGroupFilter
@@ -672,7 +672,7 @@
 			this.MinimizeBox = false;
 			this.Name = "DialogShipGroupFilter";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "フィルタ設定";
+			this.Text = "过滤器设置";
 			this.Load += new System.EventHandler(this.DialogShipGroupFilter_Load);
 			this.splitContainer1.Panel1.ResumeLayout(false);
 			this.splitContainer1.Panel2.ResumeLayout(false);

@@ -213,20 +213,20 @@
             this.StripMenu_File_MergeDefaultRecord});
             this.StripMenu_File.Name = "StripMenu_File";
             this.StripMenu_File.Size = new System.Drawing.Size(70, 20);
-            this.StripMenu_File.Text = "ファイル(&F)";
+            this.StripMenu_File.Text = "文件(&F)";
             // 
             // StripMenu_File_OutputCSVUser
             // 
             this.StripMenu_File_OutputCSVUser.Name = "StripMenu_File_OutputCSVUser";
             this.StripMenu_File_OutputCSVUser.Size = new System.Drawing.Size(215, 22);
-            this.StripMenu_File_OutputCSVUser.Text = "CSV出力(閲覧用)(&U)...";
+            this.StripMenu_File_OutputCSVUser.Text = "CSV输出(阅览用)(&U)...";
             this.StripMenu_File_OutputCSVUser.Click += new System.EventHandler(this.StripMenu_File_OutputCSVUser_Click);
             // 
             // StripMenu_File_OutputCSVData
             // 
             this.StripMenu_File_OutputCSVData.Name = "StripMenu_File_OutputCSVData";
             this.StripMenu_File_OutputCSVData.Size = new System.Drawing.Size(215, 22);
-            this.StripMenu_File_OutputCSVData.Text = "CSV出力(データ用)(&D)...";
+            this.StripMenu_File_OutputCSVData.Text = "CSV输出(数据)(&D)...";
             this.StripMenu_File_OutputCSVData.Click += new System.EventHandler(this.StripMenu_File_OutputCSVData_Click);
             // 
             // toolStripSeparator4
@@ -238,7 +238,7 @@
             // 
             this.StripMenu_File_MergeDefaultRecord.Name = "StripMenu_File_MergeDefaultRecord";
             this.StripMenu_File_MergeDefaultRecord.Size = new System.Drawing.Size(215, 22);
-            this.StripMenu_File_MergeDefaultRecord.Text = "デフォルトレコードから更新(&M)";
+            this.StripMenu_File_MergeDefaultRecord.Text = "从默认记录更新(&M)";
             this.StripMenu_File_MergeDefaultRecord.Click += new System.EventHandler(this.StripMenu_File_MergeDefaultRecord_Click);
             // 
             // StripMenu_Edit
@@ -260,7 +260,7 @@
             // 
             this.StripMenu_Edit_EditParameter.Name = "StripMenu_Edit_EditParameter";
             this.StripMenu_Edit_EditParameter.Size = new System.Drawing.Size(250, 22);
-            this.StripMenu_Edit_EditParameter.Text = "パラメータの編集(&E)...";
+            this.StripMenu_Edit_EditParameter.Text = "参数的编辑(&E)...";
             this.StripMenu_Edit_EditParameter.Click += new System.EventHandler(this.StripMenu_Edit_EditParameter_Click);
             // 
             // toolStripSeparator1
@@ -274,7 +274,7 @@
             this.StripMenu_Edit_CopyShipName.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.C)));
             this.StripMenu_Edit_CopyShipName.Size = new System.Drawing.Size(250, 22);
-            this.StripMenu_Edit_CopyShipName.Text = "艦名をコピー(&N)";
+            this.StripMenu_Edit_CopyShipName.Text = "复制舰名(&N)";
             this.StripMenu_Edit_CopyShipName.Click += new System.EventHandler(this.StripMenu_Edit_CopyShipName_Click);
             // 
             // StripMenu_Edit_CopyShipData
@@ -282,7 +282,7 @@
             this.StripMenu_Edit_CopyShipData.Name = "StripMenu_Edit_CopyShipData";
             this.StripMenu_Edit_CopyShipData.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
             this.StripMenu_Edit_CopyShipData.Size = new System.Drawing.Size(250, 22);
-            this.StripMenu_Edit_CopyShipData.Text = "艦船データのコピー(&D)";
+            this.StripMenu_Edit_CopyShipData.Text = "复制舰船数据(&D)";
             this.StripMenu_Edit_CopyShipData.Click += new System.EventHandler(this.StripMenu_Edit_CopyShipData_Click);
             // 
             // toolStripSeparator2
@@ -307,7 +307,7 @@
             // 
             this.StripMenu_Edit_CopySpecialEquipmentTable.Name = "StripMenu_Edit_CopySpecialEquipmentTable";
             this.StripMenu_Edit_CopySpecialEquipmentTable.Size = new System.Drawing.Size(250, 22);
-            this.StripMenu_Edit_CopySpecialEquipmentTable.Text = "特殊装備テーブルをコピー(&S)";
+            this.StripMenu_Edit_CopySpecialEquipmentTable.Text = "特殊装备表复印件(&S)";
             this.StripMenu_Edit_CopySpecialEquipmentTable.Click += new System.EventHandler(this.StripMenu_Edit_CopySpecialEquipmentTable_Click);
             // 
             // StripMenu_View
@@ -324,14 +324,14 @@
             this.StripMenu_View_ShowAppearingArea.Name = "StripMenu_View_ShowAppearingArea";
             this.StripMenu_View_ShowAppearingArea.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
             this.StripMenu_View_ShowAppearingArea.Size = new System.Drawing.Size(217, 22);
-            this.StripMenu_View_ShowAppearingArea.Text = "出現海域を検索(&P)";
+            this.StripMenu_View_ShowAppearingArea.Text = "出现海域(&P)";
             this.StripMenu_View_ShowAppearingArea.Click += new System.EventHandler(this.StripMenu_View_ShowAppearingArea_Click);
             // 
             // StripMenu_View_ShowShipGraphicViewer
             // 
             this.StripMenu_View_ShowShipGraphicViewer.Name = "StripMenu_View_ShowShipGraphicViewer";
             this.StripMenu_View_ShowShipGraphicViewer.Size = new System.Drawing.Size(217, 22);
-            this.StripMenu_View_ShowShipGraphicViewer.Text = "画像ビューア(&V)";
+            this.StripMenu_View_ShowShipGraphicViewer.Text = "图像查看器(&V)";
             this.StripMenu_View_ShowShipGraphicViewer.Click += new System.EventHandler(this.StripMenu_View_ShowShipGraphicViewer_Click);
             // 
             // splitContainer1
@@ -414,7 +414,7 @@
             // ShipView_ShipType
             // 
             this.ShipView_ShipType.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.ShipView_ShipType.HeaderText = "艦種";
+            this.ShipView_ShipType.HeaderText = "舰种";
             this.ShipView_ShipType.Name = "ShipView_ShipType";
             this.ShipView_ShipType.ReadOnly = true;
             this.ShipView_ShipType.Width = 80;
@@ -422,7 +422,7 @@
             // ShipView_Name
             // 
             this.ShipView_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ShipView_Name.HeaderText = "艦名";
+            this.ShipView_Name.HeaderText = "舰名";
             this.ShipView_Name.Name = "ShipView_Name";
             this.ShipView_Name.ReadOnly = true;
             // 
@@ -559,7 +559,7 @@
             this.imageLabel2.Name = "imageLabel2";
             this.imageLabel2.Size = new System.Drawing.Size(54, 16);
             this.imageLabel2.TabIndex = 22;
-            this.imageLabel2.Text = "図鑑番号:";
+            this.imageLabel2.Text = "图鉴编号:";
             // 
             // Description
             // 
@@ -695,7 +695,7 @@
             this.RemodelAfter.Name = "RemodelAfter";
             this.RemodelAfter.Size = new System.Drawing.Size(37, 16);
             this.RemodelAfter.TabIndex = 19;
-            this.RemodelAfter.Text = "改装後";
+            this.RemodelAfter.Text = "改装后";
             this.RemodelAfter.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.RemodelAfter.MouseClick += new System.Windows.Forms.MouseEventHandler(this.RemodelAfterShipName_MouseClick);
             // 
@@ -888,7 +888,7 @@
             this.imageLabel71.Name = "imageLabel71";
             this.imageLabel71.Size = new System.Drawing.Size(38, 16);
             this.imageLabel71.TabIndex = 16;
-            this.imageLabel71.Text = "レア";
+            this.imageLabel71.Text = "稀有的";
             this.imageLabel71.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // TitleRange
@@ -927,7 +927,7 @@
             this.TitleBuildingTime.Name = "TitleBuildingTime";
             this.TitleBuildingTime.Size = new System.Drawing.Size(68, 16);
             this.TitleBuildingTime.TabIndex = 13;
-            this.TitleBuildingTime.Text = "建造時間";
+            this.TitleBuildingTime.Text = "建造时间";
             this.TitleBuildingTime.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // TableArsenal
@@ -1207,7 +1207,7 @@
             this.imageLabel45.Name = "imageLabel45";
             this.imageLabel45.Size = new System.Drawing.Size(44, 16);
             this.imageLabel45.TabIndex = 6;
-            this.imageLabel45.Text = "艦船ID:";
+            this.imageLabel45.Text = "舰船ID:";
             // 
             // TableParameterMain
             // 
@@ -1347,7 +1347,7 @@
             this.TitleLuck.Name = "TitleLuck";
             this.TitleLuck.Size = new System.Drawing.Size(44, 16);
             this.TitleLuck.TabIndex = 13;
-            this.TitleLuck.Text = "運";
+            this.TitleLuck.Text = "运";
             this.TitleLuck.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // imageLabel41
@@ -1444,7 +1444,7 @@
             this.ParameterLevel.Size = new System.Drawing.Size(54, 23);
             this.ParameterLevel.TabIndex = 6;
             this.ParameterLevel.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ToolTipInfo.SetToolTip(this.ParameterLevel, "レベルを指定すると予測値が表示されます。");
+            this.ToolTipInfo.SetToolTip(this.ParameterLevel, "指定等级的话会显示预测值。");
             this.ParameterLevel.Value = new decimal(new int[] {
             150,
             0,
@@ -1804,7 +1804,7 @@
             this.ShipBanner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ShipBanner.TabIndex = 4;
             this.ShipBanner.TabStop = false;
-            this.ToolTipInfo.SetToolTip(this.ShipBanner, "(右クリックで画像ビューアを開く)");
+            this.ToolTipInfo.SetToolTip(this.ShipBanner, "(点击右键打开图像查看器)");
             this.ShipBanner.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ShipBanner_MouseClick);
             // 
             // ToolTipInfo
@@ -1822,7 +1822,7 @@
             // SaveCSVDialog
             // 
             this.SaveCSVDialog.Filter = "CSV|*.csv|File|*";
-            this.SaveCSVDialog.Title = "CSVに出力";
+            this.SaveCSVDialog.Title = "输出到CSV";
             // 
             // ImageLoader
             // 
@@ -1851,7 +1851,7 @@
             this.MinimumSize = new System.Drawing.Size(816, 518);
             this.Name = "DialogAlbumMasterShip";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "艦船図鑑";
+            this.Text = "舰船图鉴";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DialogAlbumMasterShip_FormClosed);
             this.Load += new System.EventHandler(this.DialogAlbumMasterShip_Load);
             this.menuStrip1.ResumeLayout(false);

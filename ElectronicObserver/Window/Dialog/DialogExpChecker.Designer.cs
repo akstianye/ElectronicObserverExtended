@@ -101,7 +101,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(43, 15);
 			this.label3.TabIndex = 0;
-			this.label3.Text = "対象艦";
+			this.label3.Text = "目标舰";
 			// 
 			// SearchInFleet
 			// 
@@ -111,8 +111,8 @@
 			this.SearchInFleet.Name = "SearchInFleet";
 			this.SearchInFleet.Size = new System.Drawing.Size(90, 19);
 			this.SearchInFleet.TabIndex = 2;
-			this.SearchInFleet.Text = "艦隊から探す";
-			this.ToolTipInfo.SetToolTip(this.SearchInFleet, "現在艦隊に所属している艦のみ選択可能にします。");
+			this.SearchInFleet.Text = "从舰队寻找";
+			this.ToolTipInfo.SetToolTip(this.SearchInFleet, "现在舰队所属的舰可以选择。");
 			this.SearchInFleet.UseVisualStyleBackColor = true;
 			this.SearchInFleet.CheckedChanged += new System.EventHandler(this.SearchInFleet_CheckedChanged);
 			// 
@@ -124,7 +124,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(118, 15);
 			this.label1.TabIndex = 7;
-			this.label1.Text = "出撃あたりの獲得Exp:";
+			this.label1.Text = "出击附近的获得Exp:";
 			// 
 			// ShowAllASWEquipments
 			// 
@@ -134,8 +134,8 @@
 			this.ShowAllASWEquipments.Name = "ShowAllASWEquipments";
 			this.ShowAllASWEquipments.Size = new System.Drawing.Size(110, 19);
 			this.ShowAllASWEquipments.TabIndex = 4;
-			this.ShowAllASWEquipments.Text = "対潜装備全表示";
-			this.ToolTipInfo.SetToolTip(this.ShowAllASWEquipments, "すべてのソナー・爆雷の組み合わせを表示します。");
+			this.ShowAllASWEquipments.Text = "反潜装备全显示";
+			this.ToolTipInfo.SetToolTip(this.ShowAllASWEquipments, "显示所有的声纳·炸雷的组合。");
 			this.ShowAllASWEquipments.UseVisualStyleBackColor = true;
 			this.ShowAllASWEquipments.CheckedChanged += new System.EventHandler(this.ShowAllASWEquipments_CheckedChanged);
 			// 
@@ -148,7 +148,7 @@
 			this.ShowAllLevel.Size = new System.Drawing.Size(75, 19);
 			this.ShowAllLevel.TabIndex = 3;
 			this.ShowAllLevel.Text = "全Lv表示";
-			this.ToolTipInfo.SetToolTip(this.ShowAllLevel, "有効な時は Lv. 1 から表示します。\r\n無効な時は次のレベルから表示します。");
+			this.ToolTipInfo.SetToolTip(this.ShowAllLevel, "有效的时候从Lv. 1开始显示。\r\n无效的时候从下一级开始显示。");
 			this.ShowAllLevel.UseVisualStyleBackColor = true;
 			this.ShowAllLevel.CheckedChanged += new System.EventHandler(this.ShowAllLevel_CheckedChanged);
 			// 
@@ -175,7 +175,7 @@
 			this.ASWModernization.Size = new System.Drawing.Size(40, 23);
 			this.ASWModernization.TabIndex = 6;
 			this.ASWModernization.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this.ToolTipInfo.SetToolTip(this.ASWModernization, "対潜改修値を現在値から変更します。");
+			this.ToolTipInfo.SetToolTip(this.ASWModernization, "反潜修复值从当前值改变。");
 			this.ASWModernization.ValueChanged += new System.EventHandler(this.ASWModernization_ValueChanged);
 			// 
 			// ExpUnit
@@ -191,7 +191,7 @@
 			this.ExpUnit.Size = new System.Drawing.Size(80, 23);
 			this.ExpUnit.TabIndex = 8;
 			this.ExpUnit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-			this.ToolTipInfo.SetToolTip(this.ExpUnit, "1回の出撃当たりの獲得Exp. を入力すると、出撃回数が計算できます。");
+			this.ToolTipInfo.SetToolTip(this.ExpUnit, "输入每一次出击的获得Exp.的话，可以计算出击次数。");
 			this.ExpUnit.Value = new decimal(new int[] {
             2268,
             0,
@@ -267,7 +267,7 @@
 			// 
 			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
 			this.ColumnSortieCount.DefaultCellStyle = dataGridViewCellStyle3;
-			this.ColumnSortieCount.HeaderText = "出撃回数";
+			this.ColumnSortieCount.HeaderText = "出击次数";
 			this.ColumnSortieCount.Name = "ColumnSortieCount";
 			this.ColumnSortieCount.ReadOnly = true;
 			this.ColumnSortieCount.Width = 72;
@@ -276,7 +276,7 @@
 			// 
 			dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
 			this.ColumnASW.DefaultCellStyle = dataGridViewCellStyle4;
-			this.ColumnASW.HeaderText = "対潜";
+			this.ColumnASW.HeaderText = "反潜";
 			this.ColumnASW.Name = "ColumnASW";
 			this.ColumnASW.ReadOnly = true;
 			this.ColumnASW.Width = 40;
@@ -316,7 +316,7 @@
 			this.Font = new System.Drawing.Font("Meiryo UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
 			this.Name = "DialogExpChecker";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "必要経験値計算";
+			this.Text = "必要经验值计算";
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DialogExpChecker_FormClosed);
 			this.Load += new System.EventHandler(this.DialogExpChecker_Load);
 			this.groupBox1.ResumeLayout(false);

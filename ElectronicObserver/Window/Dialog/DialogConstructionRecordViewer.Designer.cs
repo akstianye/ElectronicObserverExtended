@@ -133,7 +133,7 @@
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(55, 15);
 			this.label8.TabIndex = 42;
-			this.label8.Text = "開発資材";
+			this.label8.Text = "开发材料";
 			// 
 			// DevelopmentMaterial
 			// 
@@ -155,7 +155,7 @@
 			this.IsLargeConstruction.Name = "IsLargeConstruction";
 			this.IsLargeConstruction.Size = new System.Drawing.Size(86, 19);
 			this.IsLargeConstruction.TabIndex = 40;
-			this.IsLargeConstruction.Text = "大型艦建造";
+			this.IsLargeConstruction.Text = "建造大型舰船";
 			this.IsLargeConstruction.ThreeState = true;
 			this.IsLargeConstruction.UseVisualStyleBackColor = true;
 			// 
@@ -167,7 +167,7 @@
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(51, 15);
 			this.label7.TabIndex = 39;
-			this.label7.Text = "空きドック";
+			this.label7.Text = "空船坞";
 			// 
 			// EmptyDock
 			// 
@@ -186,7 +186,7 @@
 			this.ButtonRun.Name = "ButtonRun";
 			this.ButtonRun.Size = new System.Drawing.Size(75, 23);
 			this.ButtonRun.TabIndex = 37;
-			this.ButtonRun.Text = "検索";
+			this.ButtonRun.Text = "搜索";
 			this.ButtonRun.UseVisualStyleBackColor = true;
 			this.ButtonRun.Click += new System.EventHandler(this.ButtonRun_Click);
 			// 
@@ -198,7 +198,7 @@
 			this.MergeRows.Name = "MergeRows";
 			this.MergeRows.Size = new System.Drawing.Size(62, 19);
 			this.MergeRows.TabIndex = 36;
-			this.MergeRows.Text = "まとめる";
+			this.MergeRows.Text = "总结";
 			this.MergeRows.UseVisualStyleBackColor = true;
 			// 
 			// label6
@@ -208,7 +208,7 @@
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(35, 15);
 			this.label6.TabIndex = 35;
-			this.label6.Text = "レシピ";
+			this.label6.Text = "配方";
 			// 
 			// Recipe
 			// 
@@ -248,7 +248,7 @@
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(43, 15);
 			this.label5.TabIndex = 31;
-			this.label5.Text = "秘書艦";
+			this.label5.Text = "秘书舰";
 			// 
 			// DateEnd
 			// 
@@ -280,7 +280,7 @@
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(31, 15);
 			this.label3.TabIndex = 27;
-			this.label3.Text = "開始";
+			this.label3.Text = "开始";
 			// 
 			// label2
 			// 
@@ -289,7 +289,7 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(41, 15);
 			this.label2.TabIndex = 26;
-			this.label2.Text = "カテゴリ";
+			this.label2.Text = "类别";
 			// 
 			// ShipCategory
 			// 
@@ -308,7 +308,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(31, 15);
 			this.label1.TabIndex = 24;
-			this.label1.Text = "艦名";
+			this.label1.Text = "舰名";
 			// 
 			// ShipName
 			// 
@@ -368,25 +368,25 @@
 			// 
 			// RecordView_Name
 			// 
-			this.RecordView_Name.HeaderText = "名前";
+			this.RecordView_Name.HeaderText = "名字";
 			this.RecordView_Name.Name = "RecordView_Name";
 			this.RecordView_Name.ReadOnly = true;
 			// 
 			// RecordView_Date
 			// 
-			this.RecordView_Date.HeaderText = "日付";
+			this.RecordView_Date.HeaderText = "时间";
 			this.RecordView_Date.Name = "RecordView_Date";
 			this.RecordView_Date.ReadOnly = true;
 			// 
 			// RecordView_Recipe
 			// 
-			this.RecordView_Recipe.HeaderText = "レシピ";
+			this.RecordView_Recipe.HeaderText = "配方";
 			this.RecordView_Recipe.Name = "RecordView_Recipe";
 			this.RecordView_Recipe.ReadOnly = true;
 			// 
 			// RecordView_SecretaryShip
 			// 
-			this.RecordView_SecretaryShip.HeaderText = "秘書艦";
+			this.RecordView_SecretaryShip.HeaderText = "秘书舰";
 			this.RecordView_SecretaryShip.Name = "RecordView_SecretaryShip";
 			this.RecordView_SecretaryShip.ReadOnly = true;
 			// 
@@ -422,7 +422,7 @@
 			this.Controls.Add(this.statusStrip1);
 			this.Font = new System.Drawing.Font("Meiryo UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
 			this.Name = "DialogConstructionRecordViewer";
-			this.Text = "建造記録";
+			this.Text = "建造记录";
 			this.Load += new System.EventHandler(this.DialogConstructionRecordViewer_Load);
 			this.statusStrip1.ResumeLayout(false);
 			this.statusStrip1.PerformLayout();

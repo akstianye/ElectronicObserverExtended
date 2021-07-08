@@ -118,7 +118,7 @@
             this.ButtonCancel.Name = "ButtonCancel";
             this.ButtonCancel.Size = new System.Drawing.Size(75, 23);
             this.ButtonCancel.TabIndex = 7;
-            this.ButtonCancel.Text = "キャンセル";
+            this.ButtonCancel.Text = "取消";
             this.ButtonCancel.UseVisualStyleBackColor = true;
             this.ButtonCancel.Click += new System.EventHandler(this.ButtonCancel_Click);
             // 
@@ -159,7 +159,7 @@
             this.SoundPathDirectorize.Size = new System.Drawing.Size(32, 23);
             this.SoundPathDirectorize.TabIndex = 6;
             this.SoundPathDirectorize.Text = "Dir";
-            this.ToolTipText.SetToolTip(this.SoundPathDirectorize, "パスのファイル名部分を削除し、フォルダ指定にします。\r\nパスにフォルダを指定した場合、そのフォルダに含まれる音声ファイルがランダムに再生されます。");
+            this.ToolTipText.SetToolTip(this.SoundPathDirectorize, "删除路径的文件名部分，指定文件夹。\r\n在路径中指定文件夹的情况下，该文件夹中包含的声音文件会随机播放。");
             this.SoundPathDirectorize.UseVisualStyleBackColor = true;
             this.SoundPathDirectorize.Click += new System.EventHandler(this.SoundPathDirectorize_Click);
             // 
@@ -170,7 +170,7 @@
             this.LoopsSound.Name = "LoopsSound";
             this.LoopsSound.Size = new System.Drawing.Size(55, 19);
             this.LoopsSound.TabIndex = 5;
-            this.LoopsSound.Text = "ループ";
+            this.LoopsSound.Text = "循环";
             this.LoopsSound.UseVisualStyleBackColor = true;
             // 
             // label9
@@ -189,7 +189,7 @@
             this.SoundVolume.Size = new System.Drawing.Size(80, 23);
             this.SoundVolume.TabIndex = 2;
             this.SoundVolume.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ToolTipText.SetToolTip(this.SoundVolume, "通知音の音量を指定します。\r\n0が無音で100が最大音量です。");
+            this.ToolTipText.SetToolTip(this.SoundVolume, "指定通知声音的音量。\r\n0是无声的，100是最大音量。");
             // 
             // PlaysSound
             // 
@@ -198,7 +198,7 @@
             this.PlaysSound.Name = "PlaysSound";
             this.PlaysSound.Size = new System.Drawing.Size(78, 19);
             this.PlaysSound.TabIndex = 0;
-            this.PlaysSound.Text = "有効にする";
+            this.PlaysSound.Text = "启用";
             this.PlaysSound.UseVisualStyleBackColor = true;
             // 
             // SoundPathSearch
@@ -230,8 +230,8 @@
             this.ButtonTest.Name = "ButtonTest";
             this.ButtonTest.Size = new System.Drawing.Size(75, 23);
             this.ButtonTest.TabIndex = 5;
-            this.ButtonTest.Text = "テスト";
-            this.ToolTipText.SetToolTip(this.ButtonTest, "通知のテスト再生を行います。\r\n設定が適用・保存されるため注意してください。");
+            this.ButtonTest.Text = "测试";
+            this.ToolTipText.SetToolTip(this.ButtonTest, "执行通知的测试回放。\r\n请注意，设置将被应用和保存。");
             this.ButtonTest.UseVisualStyleBackColor = true;
             this.ButtonTest.Click += new System.EventHandler(this.ButtonTest_Click);
             // 
@@ -242,7 +242,7 @@
             this.IsEnabled.Name = "IsEnabled";
             this.IsEnabled.Size = new System.Drawing.Size(111, 19);
             this.IsEnabled.TabIndex = 0;
-            this.IsEnabled.Text = "通知を有効にする";
+            this.IsEnabled.Text = "启用通知";
             this.IsEnabled.UseVisualStyleBackColor = true;
             // 
             // GroupImage
@@ -266,7 +266,7 @@
             this.DrawsImage.Name = "DrawsImage";
             this.DrawsImage.Size = new System.Drawing.Size(78, 19);
             this.DrawsImage.TabIndex = 0;
-            this.DrawsImage.Text = "有効にする";
+            this.DrawsImage.Text = "启用";
             this.DrawsImage.UseVisualStyleBackColor = true;
             // 
             // ImagePathSearch
@@ -320,7 +320,7 @@
             this.GroupDialog.Size = new System.Drawing.Size(602, 171);
             this.GroupDialog.TabIndex = 3;
             this.GroupDialog.TabStop = false;
-            this.GroupDialog.Text = "通知ダイアログ";
+            this.GroupDialog.Text = "通知对话框";
             // 
             // label5
             // 
@@ -329,7 +329,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 15);
             this.label5.TabIndex = 20;
-            this.label5.Text = "閉じる：";
+            this.label5.Text = "关闭：";
             // 
             // CloseList
             // 
@@ -337,13 +337,13 @@
             this.CloseList.CheckOnClick = true;
             this.CloseList.FormattingEnabled = true;
             this.CloseList.Items.AddRange(new object[] {
-            "左クリック",
-            "左ダブルクリック",
-            "右クリック",
-            "右ダブルクリック",
-            "中クリック",
-            "中ダブルクリック",
-            "マウスオーバー"});
+			"左键单击",
+			"左键双击",
+			"右键点击",
+			"右键双击",
+			"点击中键",
+			"中键双击",
+            "鼠标悬浮"});
             this.CloseList.Location = new System.Drawing.Point(476, 35);
             this.CloseList.Name = "CloseList";
             this.CloseList.Size = new System.Drawing.Size(120, 130);
@@ -356,8 +356,8 @@
             this.ShowWithActivation.Name = "ShowWithActivation";
             this.ShowWithActivation.Size = new System.Drawing.Size(151, 19);
             this.ShowWithActivation.TabIndex = 8;
-            this.ShowWithActivation.Text = "表示時にアクティベートする";
-            this.ToolTipText.SetToolTip(this.ShowWithActivation, "表示時にダイアログをアクティブにします。\r\n無効にすると操作を妨げない代わりにダイアログが隠れやすくなります。");
+            this.ShowWithActivation.Text = "在显示器上激活";
+            this.ToolTipText.SetToolTip(this.ShowWithActivation, "显示时激活对话框。\r\n禁用它不会干扰操作，但可以更轻松地隐藏对话框。");
             this.ShowWithActivation.UseVisualStyleBackColor = true;
             // 
             // label4
@@ -367,7 +367,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 15);
             this.label4.TabIndex = 3;
-            this.label4.Text = "座標：";
+            this.label4.Text = "座标：";
             // 
             // DrawsMessage
             // 
@@ -376,8 +376,8 @@
             this.DrawsMessage.Name = "DrawsMessage";
             this.DrawsMessage.Size = new System.Drawing.Size(123, 19);
             this.DrawsMessage.TabIndex = 6;
-            this.DrawsMessage.Text = "メッセージを表示する";
-            this.ToolTipText.SetToolTip(this.DrawsMessage, "ダイアログ内に通知テキストを描画するかを設定します。\r\n画像のみで足りる場合は非表示にできます。");
+            this.DrawsMessage.Text = "显示消息";
+            this.ToolTipText.SetToolTip(this.DrawsMessage, "设置是否在对话框中绘制通知文本。\r\n如果图像足够，您可以隐藏它。");
             this.DrawsMessage.UseVisualStyleBackColor = true;
             // 
             // HasFormBorder
@@ -387,8 +387,8 @@
             this.HasFormBorder.Name = "HasFormBorder";
             this.HasFormBorder.Size = new System.Drawing.Size(102, 19);
             this.HasFormBorder.TabIndex = 7;
-            this.HasFormBorder.Text = "窓枠を表示する";
-            this.ToolTipText.SetToolTip(this.HasFormBorder, "通知ダイアログのウィンドウ枠を表示するかを指定できます。\r\n画像のみで足りる場合は非表示にできます。");
+            this.HasFormBorder.Text = "显示窗框";
+            this.ToolTipText.SetToolTip(this.HasFormBorder, "您可以指定是否显示通知对话框的窗口框架。\r\n如果图像足够，您可以隐藏它。");
             this.HasFormBorder.UseVisualStyleBackColor = true;
             // 
             // label6
@@ -407,7 +407,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(83, 15);
             this.label7.TabIndex = 12;
-            this.label7.Text = "自動で閉じる：";
+            this.label7.Text = "自动关闭：";
             // 
             // ClosingInterval
             // 
@@ -421,7 +421,7 @@
             this.ClosingInterval.Size = new System.Drawing.Size(80, 23);
             this.ClosingInterval.TabIndex = 13;
             this.ClosingInterval.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ToolTipText.SetToolTip(this.ClosingInterval, "通知ダイアログを放置した時に自動で閉じるまでの時間を指定します。\r\n0秒を指定した場合は時間経過では閉じません。");
+            this.ToolTipText.SetToolTip(this.ClosingInterval, "指定通知对话框在无人看管时自动关闭的时间。\r\n如果指定了 0 秒，则它不会随着时间的推移而关闭。");
             // 
             // BackColorPreview
             // 
@@ -431,7 +431,7 @@
             this.BackColorPreview.Size = new System.Drawing.Size(67, 15);
             this.BackColorPreview.TabIndex = 18;
             this.BackColorPreview.Text = "■背景色：";
-            this.ToolTipText.SetToolTip(this.BackColorPreview, "通知ダイアログの背景色を指定します。\r\nこのラベルの■に色プレビューが表示されます。\r\n");
+            this.ToolTipText.SetToolTip(this.BackColorPreview, "指定通知对话框的背景颜色。\r\n颜色预览显示在此标签上的 ■ 中。\r\n");
             this.BackColorPreview.ForeColorChanged += new System.EventHandler(this.BackColorPreview_ForeColorChanged);
             // 
             // BackColorSelect
@@ -442,7 +442,7 @@
             this.BackColorSelect.Size = new System.Drawing.Size(32, 23);
             this.BackColorSelect.TabIndex = 19;
             this.BackColorSelect.Text = "...";
-            this.ToolTipText.SetToolTip(this.BackColorSelect, "通知ダイアログの背景色を指定します。\r\n左側のラベルの■に色プレビューが表示されます。\r\n");
+            this.ToolTipText.SetToolTip(this.BackColorSelect, "指定通知对话框的背景颜色。\r\n颜色预览显示在左侧的 ■ 标签上。\r\n");
             this.BackColorSelect.UseVisualStyleBackColor = true;
             this.BackColorSelect.Click += new System.EventHandler(this.BackColorSelect_Click);
             // 
@@ -454,7 +454,7 @@
             this.ForeColorPreview.Size = new System.Drawing.Size(67, 15);
             this.ForeColorPreview.TabIndex = 16;
             this.ForeColorPreview.Text = "■前景色：";
-            this.ToolTipText.SetToolTip(this.ForeColorPreview, "通知ダイアログの文字色を指定します。\r\nこのラベルの■に色プレビューが表示されます。\r\n");
+            this.ToolTipText.SetToolTip(this.ForeColorPreview, "指定通知对话框的文本颜色。\r\n颜色预览显示在此标签上的 ■ 中。\r\n");
             this.ForeColorPreview.ForeColorChanged += new System.EventHandler(this.ForeColorPreview_ForeColorChanged);
             // 
             // ForeColorSelect
@@ -465,7 +465,7 @@
             this.ForeColorSelect.Size = new System.Drawing.Size(32, 23);
             this.ForeColorSelect.TabIndex = 17;
             this.ForeColorSelect.Text = "...";
-            this.ToolTipText.SetToolTip(this.ForeColorSelect, "通知ダイアログの文字色を指定します。\r\n左側のラベルの■に色プレビューが表示されます。");
+            this.ToolTipText.SetToolTip(this.ForeColorSelect, "指定通知对话框的文本颜色。\r\n颜色预览显示在左侧的 ■ 标签上。");
             this.ForeColorSelect.UseVisualStyleBackColor = true;
             this.ForeColorSelect.Click += new System.EventHandler(this.ForeColorSelect_Click);
             // 
@@ -485,7 +485,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 15);
             this.label2.TabIndex = 9;
-            this.label2.Text = "通知を早める：";
+            this.label2.Text = "加速通知：";
             // 
             // AccelInterval
             // 
@@ -504,7 +504,7 @@
             this.AccelInterval.Size = new System.Drawing.Size(80, 23);
             this.AccelInterval.TabIndex = 10;
             this.AccelInterval.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ToolTipText.SetToolTip(this.AccelInterval, "通知を早める秒数を指定します。\r\n遠征・入渠を60秒早めるのがおすすめです。");
+            this.ToolTipText.SetToolTip(this.AccelInterval, "指定加速通知的秒数。\r\n遠征・入渠建议加速 60 秒。");
             // 
             // TopMostFlag
             // 
@@ -513,7 +513,7 @@
             this.TopMostFlag.Name = "TopMostFlag";
             this.TopMostFlag.Size = new System.Drawing.Size(114, 19);
             this.TopMostFlag.TabIndex = 15;
-            this.TopMostFlag.Text = "最前面に表示する";
+            this.TopMostFlag.Text = "在前台显示";
             this.TopMostFlag.UseVisualStyleBackColor = true;
             // 
             // LocationY
@@ -533,7 +533,7 @@
             this.LocationY.Size = new System.Drawing.Size(80, 23);
             this.LocationY.TabIndex = 5;
             this.LocationY.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ToolTipText.SetToolTip(this.LocationY, "配置：手動設定時の出現座標を指定します。");
+            this.ToolTipText.SetToolTip(this.LocationY, "放置：在手动设置时指定外观坐标。");
             this.LocationY.Value = new decimal(new int[] {
             99999,
             0,
@@ -557,7 +557,7 @@
             this.LocationX.Size = new System.Drawing.Size(80, 23);
             this.LocationX.TabIndex = 4;
             this.LocationX.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ToolTipText.SetToolTip(this.LocationX, "配置：手動設定時の出現座標を指定します。");
+            this.ToolTipText.SetToolTip(this.LocationX, "放置：在手动设置时指定外观坐标。");
             this.LocationX.Value = new decimal(new int[] {
             99999,
             0,
@@ -594,7 +594,7 @@
             this.Alignment.Name = "Alignment";
             this.Alignment.Size = new System.Drawing.Size(121, 23);
             this.Alignment.TabIndex = 2;
-            this.ToolTipText.SetToolTip(this.Alignment, "通知ダイアログの出現位置を設定します。");
+            this.ToolTipText.SetToolTip(this.Alignment, "设置通知对话框的出现位置。");
             // 
             // ShowsDialog
             // 
@@ -603,7 +603,7 @@
             this.ShowsDialog.Name = "ShowsDialog";
             this.ShowsDialog.Size = new System.Drawing.Size(78, 19);
             this.ShowsDialog.TabIndex = 0;
-            this.ShowsDialog.Text = "有効にする";
+            this.ShowsDialog.Text = "启用";
             this.ShowsDialog.UseVisualStyleBackColor = true;
             // 
             // GroupDamage
@@ -631,8 +631,8 @@
             this.NotifiesAtEndpoint.Name = "NotifiesAtEndpoint";
             this.NotifiesAtEndpoint.Size = new System.Drawing.Size(112, 19);
             this.NotifiesAtEndpoint.TabIndex = 6;
-            this.NotifiesAtEndpoint.Text = "終点でも通知する";
-            this.ToolTipText.SetToolTip(this.NotifiesAtEndpoint, "マップの最終セルでも通知するかを指定します。");
+            this.NotifiesAtEndpoint.Text = "终点通知";
+            this.ToolTipText.SetToolTip(this.NotifiesAtEndpoint, "指定是否在地图的最后一个单元格中进行通知。");
             this.NotifiesAtEndpoint.UseVisualStyleBackColor = true;
             // 
             // ContainsFlagship
@@ -642,7 +642,7 @@
             this.ContainsFlagship.Name = "ContainsFlagship";
             this.ContainsFlagship.Size = new System.Drawing.Size(90, 19);
             this.ContainsFlagship.TabIndex = 5;
-            this.ContainsFlagship.Text = "旗艦を含める";
+            this.ContainsFlagship.Text = "包括旗舰";
             this.ContainsFlagship.UseVisualStyleBackColor = true;
             // 
             // ContainsSafeShip
@@ -652,7 +652,7 @@
             this.ContainsSafeShip.Name = "ContainsSafeShip";
             this.ContainsSafeShip.Size = new System.Drawing.Size(136, 19);
             this.ContainsSafeShip.TabIndex = 4;
-            this.ContainsSafeShip.Text = "ダメコン装備艦を含める";
+            this.ContainsSafeShip.Text = "包括配备损坏控制的船只";
             this.ContainsSafeShip.UseVisualStyleBackColor = true;
             // 
             // ContainsNotLockedShip
@@ -662,7 +662,7 @@
             this.ContainsNotLockedShip.Name = "ContainsNotLockedShip";
             this.ContainsNotLockedShip.Size = new System.Drawing.Size(114, 19);
             this.ContainsNotLockedShip.TabIndex = 3;
-            this.ContainsNotLockedShip.Text = "非ロック艦を含める";
+            this.ContainsNotLockedShip.Text = "包括非锁定船舶";
             this.ContainsNotLockedShip.UseVisualStyleBackColor = true;
             // 
             // label8
@@ -691,7 +691,7 @@
             this.LevelBorder.Size = new System.Drawing.Size(80, 23);
             this.LevelBorder.TabIndex = 8;
             this.LevelBorder.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ToolTipText.SetToolTip(this.LevelBorder, "通知する大破艦の最低Lvを指定します。\r\nこれよりLvの低い艦は通知されないので注意してください。");
+            this.ToolTipText.SetToolTip(this.LevelBorder, "指定要通知的沉船的最小 Lv。\r\n请注意，Lv 较低的船只将不会收到通知。");
             this.LevelBorder.Value = new decimal(new int[] {
             1,
             0,
@@ -705,7 +705,7 @@
             this.NotifiesAfter.Name = "NotifiesAfter";
             this.NotifiesAfter.Size = new System.Drawing.Size(135, 19);
             this.NotifiesAfter.TabIndex = 2;
-            this.NotifiesAfter.Text = "事後通知を有効にする";
+            this.NotifiesAfter.Text = "启用后通知";
             this.ToolTipText.SetToolTip(this.NotifiesAfter, "大破進撃中に通知します。");
             this.NotifiesAfter.UseVisualStyleBackColor = true;
             // 
@@ -716,8 +716,8 @@
             this.NotifiesNow.Name = "NotifiesNow";
             this.NotifiesNow.Size = new System.Drawing.Size(135, 19);
             this.NotifiesNow.TabIndex = 1;
-            this.NotifiesNow.Text = "事中通知を有効にする";
-            this.ToolTipText.SetToolTip(this.NotifiesNow, "出撃前及び戦闘終了時に通知します。");
+            this.NotifiesNow.Text = "启用事中通知";
+            this.ToolTipText.SetToolTip(this.NotifiesNow, "出击前和战斗结束时通知。");
             this.NotifiesNow.UseVisualStyleBackColor = true;
             // 
             // NotifiesBefore
@@ -727,8 +727,8 @@
             this.NotifiesBefore.Name = "NotifiesBefore";
             this.NotifiesBefore.Size = new System.Drawing.Size(135, 19);
             this.NotifiesBefore.TabIndex = 0;
-            this.NotifiesBefore.Text = "事前通知を有効にする";
-            this.ToolTipText.SetToolTip(this.NotifiesBefore, "出撃前及び戦闘開始直後に通知します。");
+            this.NotifiesBefore.Text = "启用提前通知";
+            this.ToolTipText.SetToolTip(this.NotifiesBefore, "出击前和战斗开始后立即通知。");
             this.NotifiesBefore.UseVisualStyleBackColor = true;
             // 
             // DialogColor
@@ -739,13 +739,13 @@
             // DialogOpenSound
             // 
             this.DialogOpenSound.Filter = "Wave|*.wav|File|*";
-            this.DialogOpenSound.Title = "音声ファイルを開く";
+            this.DialogOpenSound.Title = "打开音频文件";
             // 
             // DialogOpenImage
             // 
             this.DialogOpenImage.Filter = "Image|*.bmp;*.div;*.jpg;*.jpeg;*.jpe;*.jfif;*.gif;*.png;*.tif;*.tiff|BMP|*.bmp;*." +
     "div|JPEG|*.jpg;*.jpeg;*.jpe;*.jfif|GIF|*.gif|PNG|*.png|TIFF|*.tif;*.tiff|File|*";
-            this.DialogOpenImage.Title = "画像ファイルを開く";
+            this.DialogOpenImage.Title = "打开图像文件";
             // 
             // ToolTipText
             // 
@@ -758,16 +758,16 @@
             this.AnchorageRepairNotificationLevel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.AnchorageRepairNotificationLevel.FormattingEnabled = true;
             this.AnchorageRepairNotificationLevel.Items.AddRange(new object[] {
-            "いつでも",
-            "明石旗艦の時",
-            "修理艦もいる時",
-            "プリセット編成時"});
+			"任何时间",
+			"明石旗舰的时候",
+			"修理舰也在的时候",
+			"预设编组时"});
             this.AnchorageRepairNotificationLevel.Location = new System.Drawing.Point(80, 20);
             this.AnchorageRepairNotificationLevel.Name = "AnchorageRepairNotificationLevel";
             this.AnchorageRepairNotificationLevel.Size = new System.Drawing.Size(160, 23);
             this.AnchorageRepairNotificationLevel.TabIndex = 1;
-            this.ToolTipText.SetToolTip(this.AnchorageRepairNotificationLevel, "いつでも：20分経過したら通知します。\r\n明石旗艦の時：上記に加え、明石旗艦の時のみ通知します。\r\n修理艦もいる時：上記に加え、実際に修理可能な条件の時のみ通知し" +
-        "ます。\r\nプリセット編成時：上記に加え、修理条件を満たしたプリセット編成を含むときにも通知します。");
+            this.ToolTipText.SetToolTip(this.AnchorageRepairNotificationLevel, "随时:过了20分钟会通知你。\r\n明石旗舰的时候:除了上述之外，只在明石旗舰的时候通知。\r\n修理舰也在的时候:除了上述之外，只在实际可以修理的条件下通知。" +
+		"\r\n预设编成时:上述加上，包含满足修理条件的预设编成时也通知。");
             // 
             // BaseAirCorps_NotSupplied
             // 
@@ -777,7 +777,7 @@
             this.BaseAirCorps_NotSupplied.Size = new System.Drawing.Size(74, 19);
             this.BaseAirCorps_NotSupplied.TabIndex = 0;
             this.BaseAirCorps_NotSupplied.Text = "未補給時";
-            this.ToolTipText.SetToolTip(this.BaseAirCorps_NotSupplied, "出撃前に、いずれかの中隊が未補給のときに通知します。");
+            this.ToolTipText.SetToolTip(this.BaseAirCorps_NotSupplied, "出击前，任何一个中队未补给的时候通知。");
             this.BaseAirCorps_NotSupplied.UseVisualStyleBackColor = true;
             // 
             // BaseAirCorps_Tired
@@ -788,7 +788,7 @@
             this.BaseAirCorps_Tired.Size = new System.Drawing.Size(62, 19);
             this.BaseAirCorps_Tired.TabIndex = 1;
             this.BaseAirCorps_Tired.Text = "疲労時";
-            this.ToolTipText.SetToolTip(this.BaseAirCorps_Tired, "出撃前に、いずれかの中隊が橙疲労以上のときに通知します。");
+            this.ToolTipText.SetToolTip(this.BaseAirCorps_Tired, "出击前，任何一个中队橙疲劳以上的时候通知。");
             this.BaseAirCorps_Tired.UseVisualStyleBackColor = true;
             // 
             // BaseAirCorps_NotOrganized
@@ -798,8 +798,8 @@
             this.BaseAirCorps_NotOrganized.Name = "BaseAirCorps_NotOrganized";
             this.BaseAirCorps_NotOrganized.Size = new System.Drawing.Size(128, 19);
             this.BaseAirCorps_NotOrganized.TabIndex = 2;
-            this.BaseAirCorps_NotOrganized.Text = "未編成・配置転換中";
-            this.ToolTipText.SetToolTip(this.BaseAirCorps_NotOrganized, "出撃前に、いずれかの中隊が未編成か、配置転換中のときに通知します。");
+            this.BaseAirCorps_NotOrganized.Text = "未编制和分配中";
+            this.ToolTipText.SetToolTip(this.BaseAirCorps_NotOrganized, "出击前，在某个中队未编成或正在转换部署的时候通知。");
             this.BaseAirCorps_NotOrganized.UseVisualStyleBackColor = true;
             // 
             // BaseAirCorps_Rest
@@ -810,7 +810,7 @@
             this.BaseAirCorps_Rest.Size = new System.Drawing.Size(60, 19);
             this.BaseAirCorps_Rest.TabIndex = 5;
             this.BaseAirCorps_Rest.Text = "[休息]";
-            this.ToolTipText.SetToolTip(this.BaseAirCorps_Rest, "出撃前に、基地航空隊が[休息]状態のときに通知します。");
+            this.ToolTipText.SetToolTip(this.BaseAirCorps_Rest, "出击前，基地航空队[休息]状态的时候通知。");
             this.BaseAirCorps_Rest.UseVisualStyleBackColor = true;
             // 
             // BaseAirCorps_Retreat
@@ -821,7 +821,7 @@
             this.BaseAirCorps_Retreat.Size = new System.Drawing.Size(60, 19);
             this.BaseAirCorps_Retreat.TabIndex = 4;
             this.BaseAirCorps_Retreat.Text = "[退避]";
-            this.ToolTipText.SetToolTip(this.BaseAirCorps_Retreat, "出撃前に、基地航空隊が[退避]状態のときに通知します。");
+            this.ToolTipText.SetToolTip(this.BaseAirCorps_Retreat, "出击前，基地航空队[退避]状态的时候通知。");
             this.BaseAirCorps_Retreat.UseVisualStyleBackColor = true;
             // 
             // BaseAirCorps_Standby
@@ -832,7 +832,7 @@
             this.BaseAirCorps_Standby.Size = new System.Drawing.Size(60, 19);
             this.BaseAirCorps_Standby.TabIndex = 3;
             this.BaseAirCorps_Standby.Text = "[待機]";
-            this.ToolTipText.SetToolTip(this.BaseAirCorps_Standby, "出撃前に、基地航空隊が[待機]状態のときに通知します。");
+            this.ToolTipText.SetToolTip(this.BaseAirCorps_Standby, "出击前，基地航空队[待机]状态的时候通知。");
             this.BaseAirCorps_Standby.UseVisualStyleBackColor = true;
             // 
             // BaseAirCorps_NormalMap
@@ -843,7 +843,7 @@
             this.BaseAirCorps_NormalMap.Size = new System.Drawing.Size(74, 19);
             this.BaseAirCorps_NormalMap.TabIndex = 6;
             this.BaseAirCorps_NormalMap.Text = "通常海域";
-            this.ToolTipText.SetToolTip(this.BaseAirCorps_NormalMap, "出撃前に、通常海域の基地航空隊が準備不足のときに通知します。");
+            this.ToolTipText.SetToolTip(this.BaseAirCorps_NormalMap, "出击前，通常海域的基地航空队在准备不足的时候会通知。");
             this.BaseAirCorps_NormalMap.UseVisualStyleBackColor = true;
             // 
             // BaseAirCorps_EventMap
@@ -853,8 +853,8 @@
             this.BaseAirCorps_EventMap.Name = "BaseAirCorps_EventMap";
             this.BaseAirCorps_EventMap.Size = new System.Drawing.Size(86, 19);
             this.BaseAirCorps_EventMap.TabIndex = 7;
-            this.BaseAirCorps_EventMap.Text = "イベント海域";
-            this.ToolTipText.SetToolTip(this.BaseAirCorps_EventMap, "出撃前に、イベント海域の基地航空隊が準備不足のときに通知します。");
+            this.BaseAirCorps_EventMap.Text = "活动海域";
+            this.ToolTipText.SetToolTip(this.BaseAirCorps_EventMap, "出击前，活动海域的基地航空队准备不足的时候通知。");
             this.BaseAirCorps_EventMap.UseVisualStyleBackColor = true;
             // 
             // BaseAirCorps_EquipmentRelocation
@@ -864,8 +864,8 @@
             this.BaseAirCorps_EquipmentRelocation.Name = "BaseAirCorps_EquipmentRelocation";
             this.BaseAirCorps_EquipmentRelocation.Size = new System.Drawing.Size(132, 19);
             this.BaseAirCorps_EquipmentRelocation.TabIndex = 9;
-            this.BaseAirCorps_EquipmentRelocation.Text = "装備の配置転換完了";
-            this.ToolTipText.SetToolTip(this.BaseAirCorps_EquipmentRelocation, "装備の配置転換が完了したときに通知します。");
+            this.BaseAirCorps_EquipmentRelocation.Text = "装备的配置转换完成";
+            this.ToolTipText.SetToolTip(this.BaseAirCorps_EquipmentRelocation, "装备的配置转换完成的时候通知。");
             this.BaseAirCorps_EquipmentRelocation.UseVisualStyleBackColor = true;
             // 
             // BaseAirCorps_SquadronRelocation
@@ -875,8 +875,8 @@
             this.BaseAirCorps_SquadronRelocation.Name = "BaseAirCorps_SquadronRelocation";
             this.BaseAirCorps_SquadronRelocation.Size = new System.Drawing.Size(132, 19);
             this.BaseAirCorps_SquadronRelocation.TabIndex = 8;
-            this.BaseAirCorps_SquadronRelocation.Text = "基地の配置転換完了";
-            this.ToolTipText.SetToolTip(this.BaseAirCorps_SquadronRelocation, "基地のスロットの配置転換が完了したときに通知します。\r\n「装備の配置転換完了」とは異なり、装備欄に戻った機体は通知しません。\r\n");
+            this.BaseAirCorps_SquadronRelocation.Text = "完成基地的部署转换";
+            this.ToolTipText.SetToolTip(this.BaseAirCorps_SquadronRelocation, "基地的插槽的配置转换完成的时候通知。\r\n与[装备的配置转换完成]不同，返回装备栏的机体不通知。\r\n");
             this.BaseAirCorps_SquadronRelocation.UseVisualStyleBackColor = true;
             // 
             // label10
@@ -886,7 +886,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(213, 15);
             this.label10.TabIndex = 8;
-            this.label10.Text = "＊テストを行った時点で設定が適用されます";
+            this.label10.Text = "＊当你进行测试时，设置就会被应用。";
             // 
             // GroupAnchorageRepair
             // 
@@ -906,7 +906,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(67, 15);
             this.label11.TabIndex = 0;
-            this.label11.Text = "発動条件：";
+            this.label11.Text = "启动条件：";
             // 
             // GroupBaseAirCorps
             // 
@@ -949,7 +949,7 @@
             this.Name = "DialogConfigurationNotifier";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "通知の設定";
+            this.Text = "通知的设定";
             this.Load += new System.EventHandler(this.DialogConfigurationNotifier_Load);
             this.GroupSound.ResumeLayout(false);
             this.GroupSound.PerformLayout();

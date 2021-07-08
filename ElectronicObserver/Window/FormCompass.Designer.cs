@@ -81,7 +81,7 @@
 			this.TextDestination.Name = "TextDestination";
 			this.TextDestination.Size = new System.Drawing.Size(44, 16);
 			this.TextDestination.TabIndex = 6;
-			this.TextDestination.Text = "(行き先)";
+			this.TextDestination.Text = "(目的地)";
 			// 
 			// TextEventKind
 			// 
@@ -90,7 +90,7 @@
 			this.TextEventKind.Name = "TextEventKind";
 			this.TextEventKind.Size = new System.Drawing.Size(47, 16);
 			this.TextEventKind.TabIndex = 7;
-			this.TextEventKind.Text = "(イベント)";
+			this.TextEventKind.Text = "(活动)";
 			// 
 			// TextEventDetail
 			// 
@@ -99,7 +99,7 @@
 			this.TextEventDetail.Name = "TextEventDetail";
 			this.TextEventDetail.Size = new System.Drawing.Size(71, 16);
 			this.TextEventDetail.TabIndex = 8;
-			this.TextEventDetail.Text = "(イベント詳細)";
+			this.TextEventDetail.Text = "(活动详情)";
 			this.TextEventDetail.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TextEnemyFleetName_MouseDown);
 			// 
 			// PanelEnemyCandidate
@@ -183,7 +183,7 @@
 			this.TextEnemyFleetName.Name = "TextEnemyFleetName";
 			this.TextEnemyFleetName.Size = new System.Drawing.Size(59, 16);
 			this.TextEnemyFleetName.TabIndex = 0;
-			this.TextEnemyFleetName.Text = "(敵艦隊名)";
+			this.TextEnemyFleetName.Text = "(敌舰队名)";
 			this.TextEnemyFleetName.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TextEnemyFleetName_MouseDown);
 			// 
 			// TextFormation
@@ -194,7 +194,7 @@
 			this.TextFormation.Name = "TextFormation";
 			this.TextFormation.Size = new System.Drawing.Size(35, 16);
 			this.TextFormation.TabIndex = 1;
-			this.TextFormation.Text = "(陣形)";
+			this.TextFormation.Text = "(阵形)";
 			// 
 			// TextAirSuperiority
 			// 
@@ -222,7 +222,7 @@
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.HideOnClose = true;
 			this.Name = "FormCompass";
-			this.Text = "羅針盤";
+			this.Text = "指南针";
 			this.Load += new System.EventHandler(this.FormCompass_Load);
 			this.BasePanel.ResumeLayout(false);
 			this.BasePanel.PerformLayout();

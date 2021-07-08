@@ -138,20 +138,20 @@
             this.StripMenu_File_OutputCSVData});
 			this.StripMenu_File.Name = "StripMenu_File";
 			this.StripMenu_File.Size = new System.Drawing.Size(70, 20);
-			this.StripMenu_File.Text = "ファイル(&F)";
+			this.StripMenu_File.Text = "文件(&F)";
 			// 
 			// StripMenu_File_OutputCSVUser
 			// 
 			this.StripMenu_File_OutputCSVUser.Name = "StripMenu_File_OutputCSVUser";
 			this.StripMenu_File_OutputCSVUser.Size = new System.Drawing.Size(203, 22);
-			this.StripMenu_File_OutputCSVUser.Text = "CSV出力(閲覧用)(&U)...";
+			this.StripMenu_File_OutputCSVUser.Text = "CSV输出(阅览用)(&U)...";
 			this.StripMenu_File_OutputCSVUser.Click += new System.EventHandler(this.StripMenu_File_OutputCSVUser_Click);
 			// 
 			// StripMenu_File_OutputCSVData
 			// 
 			this.StripMenu_File_OutputCSVData.Name = "StripMenu_File_OutputCSVData";
 			this.StripMenu_File_OutputCSVData.Size = new System.Drawing.Size(203, 22);
-			this.StripMenu_File_OutputCSVData.Text = "CSV出力(データ用)(&D)...";
+			this.StripMenu_File_OutputCSVData.Text = "CSV输出(数据)(&D)...";
 			this.StripMenu_File_OutputCSVData.Click += new System.EventHandler(this.StripMenu_File_OutputCSVData_Click);
 			// 
 			// StripMenu_Edit
@@ -171,7 +171,7 @@
 			this.StripMenu_Edit_CopyEquipmentName.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
             | System.Windows.Forms.Keys.C)));
 			this.StripMenu_Edit_CopyEquipmentName.Size = new System.Drawing.Size(250, 22);
-			this.StripMenu_Edit_CopyEquipmentName.Text = "装備名をコピー(&N)";
+			this.StripMenu_Edit_CopyEquipmentName.Text = "复制装备名(&N)";
 			this.StripMenu_Edit_CopyEquipmentName.Click += new System.EventHandler(this.StripMenu_Edit_CopyEquipmentName_Click);
 			// 
 			// StripMenu_Edit_CopyEquipmentData
@@ -179,7 +179,7 @@
 			this.StripMenu_Edit_CopyEquipmentData.Name = "StripMenu_Edit_CopyEquipmentData";
 			this.StripMenu_Edit_CopyEquipmentData.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
 			this.StripMenu_Edit_CopyEquipmentData.Size = new System.Drawing.Size(250, 22);
-			this.StripMenu_Edit_CopyEquipmentData.Text = "装備データをコピー(&D)";
+			this.StripMenu_Edit_CopyEquipmentData.Text = "复制装备数据(&D)";
 			this.StripMenu_Edit_CopyEquipmentData.Click += new System.EventHandler(this.StripMenu_Edit_CopyEquipmentData_Click);
 			// 
 			// toolStripSeparator1
@@ -192,7 +192,7 @@
 			this.StripMenu_Edit_GoogleEquipmentName.Name = "StripMenu_Edit_GoogleEquipmentName";
 			this.StripMenu_Edit_GoogleEquipmentName.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.G)));
 			this.StripMenu_Edit_GoogleEquipmentName.Size = new System.Drawing.Size(250, 22);
-			this.StripMenu_Edit_GoogleEquipmentName.Text = "装備名でGoogle検索(&G)";
+			this.StripMenu_Edit_GoogleEquipmentName.Text = "装备名でGoogle搜索(&G)";
 			this.StripMenu_Edit_GoogleEquipmentName.Click += new System.EventHandler(this.StripMenu_Edit_GoogleEquipmentName_Click);
 			// 
 			// StripMenu_View
@@ -208,7 +208,7 @@
 			this.StripMenu_View_ShowAppearingArea.Name = "StripMenu_View_ShowAppearingArea";
 			this.StripMenu_View_ShowAppearingArea.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
 			this.StripMenu_View_ShowAppearingArea.Size = new System.Drawing.Size(288, 22);
-			this.StripMenu_View_ShowAppearingArea.Text = "初期装備艦・開発レシピを検索(&S)";
+			this.StripMenu_View_ShowAppearingArea.Text = "搜索初期装备舰开发食谱(&S)";
 			this.StripMenu_View_ShowAppearingArea.Click += new System.EventHandler(this.StripMenu_View_ShowAppearingArea_Click);
 			// 
 			// splitContainer1
@@ -311,7 +311,7 @@
 			// EquipmentView_Type
 			// 
 			this.EquipmentView_Type.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-			this.EquipmentView_Type.HeaderText = "装備種";
+			this.EquipmentView_Type.HeaderText = "装备种类";
 			this.EquipmentView_Type.Name = "EquipmentView_Type";
 			this.EquipmentView_Type.ReadOnly = true;
 			this.EquipmentView_Type.Width = 75;
@@ -319,7 +319,7 @@
 			// EquipmentView_Name
 			// 
 			this.EquipmentView_Name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.EquipmentView_Name.HeaderText = "装備名";
+			this.EquipmentView_Name.HeaderText = "装备名";
 			this.EquipmentView_Name.Name = "EquipmentView_Name";
 			this.EquipmentView_Name.ReadOnly = true;
 			// 
@@ -384,7 +384,7 @@
 			this.TitleAircraftCost.Name = "TitleAircraftCost";
 			this.TitleAircraftCost.Size = new System.Drawing.Size(69, 16);
 			this.TitleAircraftCost.TabIndex = 17;
-			this.TitleAircraftCost.Text = "配備コスト";
+			this.TitleAircraftCost.Text = "部署成本";
 			this.TitleAircraftCost.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
 			// AircraftDistance
@@ -405,7 +405,7 @@
 			this.TitleAircraftDistance.Name = "TitleAircraftDistance";
 			this.TitleAircraftDistance.Size = new System.Drawing.Size(92, 16);
 			this.TitleAircraftDistance.TabIndex = 27;
-			this.TitleAircraftDistance.Text = "戦闘行動半径";
+			this.TitleAircraftDistance.Text = "战斗行动半径";
 			this.TitleAircraftDistance.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
 			// AlbumNo
@@ -424,7 +424,7 @@
 			this.imageLabel1.Name = "imageLabel1";
 			this.imageLabel1.Size = new System.Drawing.Size(73, 16);
 			this.imageLabel1.TabIndex = 22;
-			this.imageLabel1.Text = "初期装備艦：";
+			this.imageLabel1.Text = "初始装备舰：";
 			// 
 			// imageLabel2
 			// 
@@ -433,7 +433,7 @@
 			this.imageLabel2.Name = "imageLabel2";
 			this.imageLabel2.Size = new System.Drawing.Size(54, 16);
 			this.imageLabel2.TabIndex = 24;
-			this.imageLabel2.Text = "図鑑番号:";
+			this.imageLabel2.Text = "图鉴编号:";
 			// 
 			// DefaultSlots
 			// 
@@ -594,7 +594,7 @@
 			this.imageLabel71.Name = "imageLabel71";
 			this.imageLabel71.Size = new System.Drawing.Size(38, 16);
 			this.imageLabel71.TabIndex = 16;
-			this.imageLabel71.Text = "レア";
+			this.imageLabel71.Text = "稀有的";
 			this.imageLabel71.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
 			// TitleRange
@@ -690,7 +690,7 @@
 			this.imageLabel59.Name = "imageLabel59";
 			this.imageLabel59.Size = new System.Drawing.Size(25, 16);
 			this.imageLabel59.TabIndex = 15;
-			this.imageLabel59.Text = "廃棄";
+			this.imageLabel59.Text = "废弃";
 			this.imageLabel59.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
 			// imageLabel45
@@ -967,7 +967,7 @@
 			// SaveCSVDialog
 			// 
 			this.SaveCSVDialog.Filter = "CSV|*.csv|File|*";
-			this.SaveCSVDialog.Title = "CSVに出力";
+			this.SaveCSVDialog.Title = "输出到CSV";
 			// 
 			// DialogAlbumMasterEquipment
 			// 
@@ -981,7 +981,7 @@
 			this.MinimumSize = new System.Drawing.Size(816, 518);
 			this.Name = "DialogAlbumMasterEquipment";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "装備図鑑";
+			this.Text = "装备图鉴";
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DialogAlbumMasterEquipment_FormClosed);
 			this.Load += new System.EventHandler(this.DialogAlbumMasterEquipment_Load);
 			this.menuStrip1.ResumeLayout(false);
