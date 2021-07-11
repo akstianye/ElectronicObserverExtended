@@ -1049,7 +1049,7 @@ namespace ElectronicObserver.Data
 				case 3:
 					return "鋼材";
 				case 4:
-					return "ボーキサイト";
+					return "铝土矿";
 				case 5:
 					return "高速建造材";
 				case 6:
