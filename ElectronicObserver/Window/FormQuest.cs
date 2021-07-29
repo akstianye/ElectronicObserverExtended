@@ -519,7 +519,7 @@ namespace ElectronicObserver.Window
 		private void MenuMain_Initialize_Click(object sender, EventArgs e)
 		{
 
-			if (MessageBox.Show("任務データを初期化します。\r\nデータに齟齬が生じている場合以外での使用は推奨しません。\r\nよろしいですか？", "任務初期化の確認",
+			if (MessageBox.Show("初始化任务数据。\r\n不推荐在数据有差异的情况下使用。\r\n可以吗?", "任务初始化的确认",
 				MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2) == System.Windows.Forms.DialogResult.Yes)
 			{
 
@@ -651,7 +651,7 @@ namespace ElectronicObserver.Window
 			if (id != -1 && (quest != null || progress != null))
 			{
 
-				if (MessageBox.Show("任務" + (quest != null ? ("『" + quest.Name + "』") : ("ID: " + id.ToString() + " ")) + "を一覧から削除し、進捗をリセットします。\r\nよろしいですか？\r\n(艦これ本体の任務画面を開くと正しく更新されます。)", "任務削除の確認",
+				if (MessageBox.Show("任務" + (quest != null ? ("『" + quest.Name + "』") : ("ID: " + id.ToString() + " ")) + "从列表中删除，重置进度。\r\n可以吗?\r\n(打开舰这个主体的任务画面会被正确更新。)", "删除任务的确认",
 					MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.Yes)
 				{
 

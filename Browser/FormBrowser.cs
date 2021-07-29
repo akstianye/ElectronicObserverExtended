@@ -150,7 +150,7 @@ namespace Browser
 				using (var g = Graphics.FromImage(control.Image))
 				{
 					g.Clear(SystemColors.Control);
-					g.DrawString("スクリーンショットをまだ撮影していません。\r\n", Font, Brushes.Black, new Point(4, 4));
+					g.DrawString("还未截图\r\n", Font, Brushes.Black, new Point(4, 4));
 				}
 
 				var host = new ToolStripControlHost(control, "ToolMenu_Other_LastScreenShot_ImageHost");
@@ -455,7 +455,7 @@ namespace Browser
 			}
 			catch (Exception ex)
 			{
-				SendErrorReport(ex.ToString(), "スタイルシートの適用に失敗しました。");
+				SendErrorReport(ex.ToString(), "未能应用样式表。");
 			}
 
 		}
@@ -481,7 +481,7 @@ namespace Browser
 			}
 			catch (Exception ex)
 			{
-				SendErrorReport(ex.ToString(), "DMMによるページ更新ダイアログの非表示に失敗しました。");
+				SendErrorReport(ex.ToString(), "无法通过 DMM 隐藏页面刷新对话框。");
 			}
 
 		}
@@ -583,7 +583,7 @@ namespace Browser
 
 			if (fit)
 			{
-				ToolMenu_Other_Zoom_Current.Text = "現在: ぴったり";
+				ToolMenu_Other_Zoom_Current.Text = "現在: 正好合适";
 			}
 			else
 			{
@@ -602,7 +602,7 @@ namespace Browser
 			var kancolleFrame = GetKanColleFrame();
 			if (kancolleFrame == null)
 			{
-				AddLog(3, string.Format("艦これが読み込まれていないため、スクリーンショットを撮ることはできません。"));
+				AddLog(3, string.Format("因为没有读取这个舰娘,所以无法截图"));
 				System.Media.SystemSounds.Beep.Play();
 				return null;
 			}
@@ -729,11 +729,11 @@ namespace Browser
 						image.Save(path, imgFormat);
 						_lastScreenShotPath = path;
 
-						AddLog(2, $"スクリーンショットを {path} に保存しました。");
+						AddLog(2, $"截图 {path} 保存了。");
 					}
 					catch (Exception ex)
 					{
-						SendErrorReport(ex.ToString(), "スクリーンショットの保存に失敗しました。");
+						SendErrorReport(ex.ToString(), "截图保存失败了。");
 					}
 				}
 
@@ -746,18 +746,18 @@ namespace Browser
 						Clipboard.SetImage(image);
 
 						if ((savemode & 3) != 3)
-							AddLog(2, "スクリーンショットをクリップボードにコピーしました。");
+							AddLog(2, "把截图复制到剪贴板上了。");
 					}
 					catch (Exception ex)
 					{
-						SendErrorReport(ex.ToString(), "スクリーンショットのクリップボードへのコピーに失敗しました。");
+						SendErrorReport(ex.ToString(), "截图复制到剪贴板失败了。");
 					}
 				}
 
 			}
 			catch (Exception ex)
 			{
-				SendErrorReport(ex.ToString(), "スクリーンショットの撮影に失敗しました。");
+				SendErrorReport(ex.ToString(), "截图失败了");
 			}
 			finally
 			{
@@ -1012,7 +1012,7 @@ namespace Browser
 		{
 
 			if (!Configuration.ConfirmAtRefresh ||
-				MessageBox.Show("再読み込みします。\r\nよろしいですか？", "確認",
+				MessageBox.Show("重新加载。\r\n可以吗？", "確認",
 				MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2)
 				== DialogResult.OK)
 			{
@@ -1023,7 +1023,7 @@ namespace Browser
 		private void ToolMenu_Other_RefreshIgnoreCache_Click(object sender, EventArgs e)
 		{
 			if (!Configuration.ConfirmAtRefresh ||
-				MessageBox.Show("キャッシュを無視して再読み込みします。\r\nよろしいですか？", "確認",
+				MessageBox.Show("忽略缓存并重新加载。\r\n可以吗？", "確認",
 				MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2)
 				== DialogResult.OK)
 			{
@@ -1034,7 +1034,7 @@ namespace Browser
 		private void ToolMenu_Other_NavigateToLogInPage_Click(object sender, EventArgs e)
 		{
 
-			if (MessageBox.Show("ログインページへ移動します。\r\nよろしいですか？", "確認",
+			if (MessageBox.Show("移动到登录页面。\r\n可以吗?", "确认",
 				MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2)
 				== DialogResult.OK)
 			{
@@ -1210,12 +1210,12 @@ namespace Browser
 					using (var img = new Bitmap(_lastScreenShotPath))
 					{
 						Clipboard.SetImage(img);
-						AddLog(2, string.Format("スクリーンショット {0} をクリップボードにコピーしました。", _lastScreenShotPath));
+						AddLog(2, string.Format("截屏 {0} 被复制到剪贴板。", _lastScreenShotPath));
 					}
 				}
 				catch (Exception ex)
 				{
-					SendErrorReport(ex.Message, "スクリーンショットのクリップボードへのコピーに失敗しました。");
+					SendErrorReport(ex.Message, "无法将屏幕截图复制到剪贴板。");
 				}
 			}
 		}
@@ -1230,7 +1230,7 @@ namespace Browser
 
 		private void ToolMenu_Other_ClearCache_Click(object sender, EventArgs e)
 		{
-			if (MessageBox.Show("キャッシュをクリアするため、ブラウザを再起動します。\r\nよろしいですか？\r\n※環境によっては本ツールが終了する場合があります。その場合は再起動してください。", "ブラウザ再起動確認",
+			if (MessageBox.Show("重新启动浏览器以清除缓存。\r\n可以吗？\r\n※此工具可能会根据环境终止。 在这种情况下，请重新启动。", "确认浏览器重启",
 				MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
 			{
 				BrowserHost.AsyncRemoteRun(() => BrowserHost.Proxy.ClearCache());

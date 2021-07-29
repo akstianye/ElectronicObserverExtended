@@ -1020,7 +1020,7 @@ namespace ElectronicObserver.Window
 
             if (group != null)
             {
-                if (MessageBox.Show(string.Format("グループ [{0}] を削除しますか？\r\nこの操作は元に戻せません。", group.Name), "確認",
+                if (MessageBox.Show(string.Format("小组 [{0}] 要删除吗?\r\n这个操作无法恢复。", group.Name), "確認",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2)
                     == System.Windows.Forms.DialogResult.Yes)
                 {
@@ -1038,7 +1038,7 @@ namespace ElectronicObserver.Window
             }
             else
             {
-                MessageBox.Show("このグループは削除できません。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("这个组不能删除。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -1069,7 +1069,7 @@ namespace ElectronicObserver.Window
             }
             else
             {
-                MessageBox.Show("このグループの名前を変更することはできません。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("这个小组的名字不能更改。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
         }
@@ -1158,7 +1158,7 @@ namespace ElectronicObserver.Window
 
             if (group == null)
             {
-                MessageBox.Show("このグループは変更できません。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                MessageBox.Show("这个组不能变更。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 return;
             }
 
@@ -1184,7 +1184,7 @@ namespace ElectronicObserver.Window
             catch (Exception ex)
             {
 
-                Utility.ErrorReporter.SendErrorReport(ex, "ShipGroup: 列の設定ダイアログでエラーが発生しました。");
+                Utility.ErrorReporter.SendErrorReport(ex, "ShipGroup: 在列的设定对话框中发生了错误。");
             }
         }
 
@@ -1586,13 +1586,13 @@ namespace ElectronicObserver.Window
 
                         }
 
-                        Utility.Logger.Add(2, "艦船グループ CSVを " + dialog.OutputPath + " に保存しました。");
+                        Utility.Logger.Add(2, "舰船导出CSV " + dialog.OutputPath + " 保存成功。");
 
                     }
                     catch (Exception ex)
                     {
-                        Utility.ErrorReporter.SendErrorReport(ex, "艦船グループ CSV の出力に失敗しました。");
-                        MessageBox.Show("艦船グループ CSVの出力に失敗しました。\r\n" + ex.Message, "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        Utility.ErrorReporter.SendErrorReport(ex, "舰船保存CSV失败");
+                        MessageBox.Show("舰船导出CSV失败了\r\n" + ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
                 }

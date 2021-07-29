@@ -542,7 +542,7 @@ namespace ElectronicObserver.Window.Dialog
 				{
 
 					Utility.ErrorReporter.SendErrorReport(ex, "装備図鑑 CSVの出力に失敗しました。");
-					MessageBox.Show("装備図鑑 CSVの出力に失敗しました。\r\n" + ex.Message, "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show("装備図鑑 CSVの出力に失敗しました。\r\n" + ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 
 			}
@@ -607,7 +607,7 @@ namespace ElectronicObserver.Window.Dialog
 				{
 
 					Utility.ErrorReporter.SendErrorReport(ex, "装備図鑑 CSVの出力に失敗しました。");
-					MessageBox.Show("装備図鑑 CSVの出力に失敗しました。\r\n" + ex.Message, "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show("装備図鑑 CSVの出力に失敗しました。\r\n" + ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 
 			}
@@ -799,7 +799,7 @@ namespace ElectronicObserver.Window.Dialog
 
 			if (string.IsNullOrWhiteSpace(result))
 			{
-				result = eq.Name + " の初期装備艦・開発レシピは不明です。";
+				result = eq.Name + " 初始装备船/开发配方未知。";
 			}
 
 			MessageBox.Show(result, "入手手段表示", MessageBoxButtons.OK, MessageBoxIcon.Information);

@@ -69,8 +69,8 @@ namespace ElectronicObserver.Resource.Record
 							hasError = true;
 							Utility.ErrorReporter.SendErrorReport(ex, $"レコード {Path.GetFileName(path)} の破損を検出しました。");
 
-							switch (MessageBox.Show($"レコード {Path.GetFileName(path)} で破損データを検出しました。\r\n\r\n[中止]: 読み込みを中止します。データを失う可能性があります。\r\n[再試行]: <推奨>読み込みを続行します。\r\n[無視]: 読み込みを続行します。(以降再確認しません。)",
-								"レコード破損検出", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Error, MessageBoxDefaultButton.Button2))
+							switch (MessageBox.Show($"记录 {Path.GetFileName(path)} 检测出损坏的数据\r\n\r\n[中止]: 停止读取。可能会丢失数据。。\r\n[重试]: <推荐>继续读取。\r\n[無視]: 继续读取。(以后不再确认。)",
+								"记录损坏检测", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Error, MessageBoxDefaultButton.Button2))
 							{
 								case DialogResult.Abort:
 									throw;
@@ -92,7 +92,7 @@ namespace ElectronicObserver.Resource.Record
 				{
 					string backupDestination = Path.Combine(Path.GetDirectoryName(path), Path.GetFileNameWithoutExtension(path) + "_backup_" + DateTimeHelper.GetTimeStamp() + Path.GetExtension(path));
 					File.Copy(path, backupDestination);
-					Utility.Logger.Add(3, $"修復前のレコードを {backupDestination} に退避しました。復旧に失敗した場合はこのファイルから復元を試みてください。");
+					Utility.Logger.Add(3, $"修复以前的数据 {backupDestination} 备份在这。恢复失败的话请尝试从这个文件恢复。");
 
 					SaveAll(RecordManager.Instance.MasterPath);
 				}
@@ -103,12 +103,12 @@ namespace ElectronicObserver.Resource.Record
 			}
 			catch (FileNotFoundException)
 			{
-				Utility.Logger.Add(1, "レコード " + path + " は存在しません。");
+				Utility.Logger.Add(1, "记录 " + path + " 不存在。");
 
 			}
 			catch (Exception ex)
 			{
-				Utility.ErrorReporter.SendErrorReport(ex, "レコード " + path + " の読み込みに失敗しました。");
+				Utility.ErrorReporter.SendErrorReport(ex, "记录 " + path + " 读取失败。");
 			}
 
 			return false;
@@ -141,7 +141,7 @@ namespace ElectronicObserver.Resource.Record
 			}
 			catch (Exception ex)
 			{
-				Utility.ErrorReporter.SendErrorReport(ex, "レコード " + path + " の書き込みに失敗しました。");
+				Utility.ErrorReporter.SendErrorReport(ex, "记录 " + path + " 读取失败。");
 			}
 
 			return false;
@@ -180,7 +180,7 @@ namespace ElectronicObserver.Resource.Record
 			}
 			catch (Exception ex)
 			{
-				Utility.ErrorReporter.SendErrorReport(ex, "レコード " + path + " の書き込みに失敗しました。");
+				Utility.ErrorReporter.SendErrorReport(ex, "记录 " + path + " 写入失败。");
 			}
 
 			return false;

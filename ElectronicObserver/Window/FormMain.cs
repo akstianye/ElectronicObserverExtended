@@ -786,7 +786,7 @@ namespace ElectronicObserver.Window
 					catch (Exception ex)
 					{
 
-						MessageBox.Show("API読み込みに失敗しました。\r\n" + ex.Message, "エラー",
+						MessageBox.Show("API読み込みに失敗しました。\r\n" + ex.Message, "错误",
 							MessageBoxButtons.OK, MessageBoxIcon.Error);
 
 					}
@@ -921,7 +921,7 @@ namespace ElectronicObserver.Window
 					catch (Exception ex)
 					{
 
-						MessageBox.Show("API読み込みに失敗しました。\r\n" + ex.Message, "エラー",
+						MessageBox.Show("API読み込みに失敗しました。\r\n" + ex.Message, "错误",
 							MessageBoxButtons.OK, MessageBoxIcon.Error);
 					}
 				}
@@ -976,7 +976,7 @@ namespace ElectronicObserver.Window
 					catch (Exception ex)
 					{
 
-						MessageBox.Show("API読み込みに失敗しました。\r\n" + ex.Message, "エラー",
+						MessageBox.Show("API読み込みに失敗しました。\r\n" + ex.Message, "错误",
 							MessageBoxButtons.OK, MessageBoxIcon.Error);
 					}
 				}
@@ -990,7 +990,7 @@ namespace ElectronicObserver.Window
 
 			if (KCDatabase.Instance.MasterShips.Count == 0)
 			{
-				MessageBox.Show("艦船データが読み込まれていません。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show("艦船データが読み込まれていません。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
 			}
 			else
@@ -1007,7 +1007,7 @@ namespace ElectronicObserver.Window
 
 			if (KCDatabase.Instance.MasterEquipments.Count == 0)
 			{
-				MessageBox.Show("装備データが読み込まれていません。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show("装備データが読み込まれていません。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
 			}
 			else
@@ -1038,7 +1038,7 @@ namespace ElectronicObserver.Window
 				catch (Exception ex)
 				{
 
-					MessageBox.Show("削除に失敗しました。\r\n" + ex.Message, "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show("削除に失敗しました。\r\n" + ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 
 
@@ -1141,7 +1141,7 @@ namespace ElectronicObserver.Window
 				{
 
 					Utility.ErrorReporter.SendErrorReport(ex, "艦船リソースのリネームに失敗しました。");
-					MessageBox.Show("艦船リソースのリネームに失敗しました。\r\n" + ex.Message, "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show("艦船リソースのリネームに失敗しました。\r\n" + ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
 				}
 
@@ -1328,7 +1328,7 @@ namespace ElectronicObserver.Window
 
 			if (RecordManager.Instance.ShipDrop.Record.Count == 0)
 			{
-				MessageBox.Show("ドロップレコードがありません。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show("ドロップレコードがありません。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
 
@@ -1348,7 +1348,7 @@ namespace ElectronicObserver.Window
 
 			if (RecordManager.Instance.Development.Record.Count == 0)
 			{
-				MessageBox.Show("開発レコードがありません。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show("開発レコードがありません。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
 
@@ -1367,7 +1367,7 @@ namespace ElectronicObserver.Window
 
 			if (RecordManager.Instance.Construction.Record.Count == 0)
 			{
-				MessageBox.Show("建造レコードがありません。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show("建造レコードがありません。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				return;
 			}
 

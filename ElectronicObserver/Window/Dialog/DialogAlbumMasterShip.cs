@@ -1037,7 +1037,7 @@ namespace ElectronicObserver.Window.Dialog
 				{
 
 					Utility.ErrorReporter.SendErrorReport(ex, "艦船図鑑 CSVの出力に失敗しました。");
-					MessageBox.Show("艦船図鑑 CSVの出力に失敗しました。\r\n" + ex.Message, "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show("艦船図鑑 CSVの出力に失敗しました。\r\n" + ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 
 			}
@@ -1152,7 +1152,7 @@ namespace ElectronicObserver.Window.Dialog
 				{
 
 					Utility.ErrorReporter.SendErrorReport(ex, "艦船図鑑 CSVの出力に失敗しました。");
-					MessageBox.Show("艦船図鑑 CSVの出力に失敗しました。\r\n" + ex.Message, "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					MessageBox.Show("艦船図鑑 CSVの出力に失敗しました。\r\n" + ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				}
 
 			}
@@ -1220,7 +1220,7 @@ namespace ElectronicObserver.Window.Dialog
 
 			if (_shipID <= 0)
 			{
-				MessageBox.Show("艦船を選択してください。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+				MessageBox.Show("请选择一艘船。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
 				return;
 			}
 
@@ -1615,7 +1615,7 @@ namespace ElectronicObserver.Window.Dialog
 			}
 			else
 			{
-				MessageBox.Show("対象艦船を指定してください。", "ビューア：対象未指定", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+				MessageBox.Show("请指定目标船。", "查看器：未指定", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 			}
 		}
 
@@ -1692,7 +1692,7 @@ namespace ElectronicObserver.Window.Dialog
 
 		private void StripMenu_File_MergeDefaultRecord_Click(object sender, EventArgs e)
 		{
-			if (MessageBox.Show("デフォルトレコードの情報をもとに、艦船レコードを更新します。\r\nよろしいですか？", "レコード更新確認", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Cancel)
+			if (MessageBox.Show("根据默认记录中的信息更新船舶记录。\r\n可以吗？", "记录更新确认", MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Cancel)
 			{
 				return;
 			}
@@ -1716,13 +1716,13 @@ namespace ElectronicObserver.Window.Dialog
 				}
 
 				if (count == 0)
-					Utility.Logger.Add(2, "更新できるレコードがありませんでした。お使いのデータは十分に更新されています。");
+					Utility.Logger.Add(2, "没有要更新的记录。 您的数据已被充分更新。");
 				else
-					Utility.Logger.Add(2, count + " 件の艦船レコードの更新が完了しました。開き直すと反映されます。");
+					Utility.Logger.Add(2, count + " 船舶记录更新完成。 重新打开时会反映出来。");
 			}
 			catch (Exception ex)
 			{
-				Utility.ErrorReporter.SendErrorReport(ex, "デフォルトレコードとのマージに失敗しました。");
+				Utility.ErrorReporter.SendErrorReport(ex, "未能与默认记录合并。");
 			}
 			finally
 			{

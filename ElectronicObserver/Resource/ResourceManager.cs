@@ -254,8 +254,8 @@ namespace ElectronicObserver.Resource
 			catch (Exception ex)
 			{
 
-				Utility.ErrorReporter.SendErrorReport(ex, "リソースファイルの読み込みに失敗しました。");
-				MessageBox.Show("リソースファイルの読み込みに失敗しました。\r\n" + ex.Message, "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				Utility.ErrorReporter.SendErrorReport(ex, "资源文件的读取失败了。");
+				MessageBox.Show("资源文件的读取失败了。\r\n" + ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
 				FillWithBlankImage(Icons, Enum.GetValues(typeof(IconContent)).Length);
 				FillWithBlankImage(Equipments, Enum.GetValues(typeof(EquipmentContent)).Length);

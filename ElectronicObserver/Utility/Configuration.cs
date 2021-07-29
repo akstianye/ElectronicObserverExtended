@@ -1613,8 +1613,8 @@ namespace ElectronicObserver.Utility
 			}
 			else
 			{
-				MessageBox.Show(SoftwareInformation.SoftwareNameJapanese + " をご利用いただきありがとうございます。\r\n設定や使用方法については「ヘルプ」→「オンラインヘルプ」を参照してください。\r\nご使用の前に必ずご一読ください。",
-					"初回起動メッセージ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+				MessageBox.Show(SoftwareInformation.SoftwareNameJapanese + " 非常感谢您的使用。\r\n关于设定和使用方法请参照“帮助”→“在线帮助”。\r\n在使用前请务必读一遍。",
+					"初次启动消息", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 			}
 		}
@@ -1635,7 +1635,7 @@ namespace ElectronicObserver.Utility
 			if (dt <= DateTimeHelper.CSVStringToTime("2017/03/30 00:00:00"))
 			{
 
-				if (MessageBox.Show("艦これ本体の仕様変更に伴い、レコードデータを変換する必要があります。\r\n変換を実行しますか？\r\n(変換しない場合、動作に問題が発生する可能性があります。)", "バージョンアップに伴う確認(～2.5.5.1)",
+				if (MessageBox.Show("由于 KanColle 本身的规格变化，需要转换记录数据。\r\n您要执行转换吗？\r\n(如果您不转换，您可能会遇到操作问题。)", "版本升级确认(～2.5.5.1)",
 					MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
 				{
 
@@ -1909,10 +1909,10 @@ namespace ElectronicObserver.Utility
 				}
 				catch (Exception ex)
 				{
-					Utility.ErrorReporter.SendErrorReport(ex, "~2.8.2 レコード変換処理：失敗しました。");
+					Utility.ErrorReporter.SendErrorReport(ex, "~2.8.2 记录转换处理:失败了。");
 
-					if (MessageBox.Show($"互換性維持のためのレコード変換処理中にエラーが発生しました。\r\n\r\n{ex.Message}\r\n\r\n再試行しますか？\r\n（「いいえ」を選択した場合、一部の記録データが消失する可能性があります。）",
-						"~2.8.2 レコード変換処理：" + ex.GetType().Name, MessageBoxButtons.YesNo, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
+					if (MessageBox.Show($"记录转换过程中发生错误以保持兼容性。\r\n\r\n{ex.Message}\r\n\r\n你想再试一次吗？\r\n（如果选择“否”，可能会丢失一些记录的数据。）",
+						"~2.8.2 记录转换过程：" + ex.GetType().Name, MessageBoxButtons.YesNo, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
 						== DialogResult.Yes)
 						continue;
 					else

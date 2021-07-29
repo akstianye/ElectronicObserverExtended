@@ -396,7 +396,7 @@ namespace ElectronicObserver.Data.Battle
 						var ship = FirstBattle.Initial.FriendFleet.MembersInstance[i];
 						int increment = Math.Max(lvup[i].Length - 2, 1);
 
-						Utility.Logger.Add(2, string.Format("{0} が Lv. {1} になりました。", ship.Name, ship.Level + increment));
+						Utility.Logger.Add(2, string.Format("{0} 升级到 Lv. {1} 。", ship.Name, ship.Level + increment));
 					}
 				}
 
@@ -411,7 +411,7 @@ namespace ElectronicObserver.Data.Battle
 							var ship = FirstBattle.Initial.FriendFleetEscort.MembersInstance[i];
 							int increment = Math.Max(lvup[i].Length - 2, 1);
 
-							Utility.Logger.Add(2, string.Format("{0} が Lv. {1} になりました。", ship.Name, ship.Level + increment));
+							Utility.Logger.Add(2, string.Format("{0} 升级到 Lv. {1} 。", ship.Name, ship.Level + increment));
 						}
 					}
 				}
@@ -441,7 +441,7 @@ namespace ElectronicObserver.Data.Battle
 						DroppedEquipmentCount += defaultSlot.Count(id => id != -1);
 
 					if (showLog)
-						Utility.Logger.Add(2, string.Format("{0}「{1}」が戦列に加わりました。", ship.ShipTypeName, ship.NameWithClass));
+						Utility.Logger.Add(2, string.Format("{0}「{1}」加入了战斗行列。", ship.ShipTypeName, ship.NameWithClass));
 				}
 
 				if (itemID != -1)

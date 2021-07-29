@@ -90,7 +90,7 @@ namespace ElectronicObserver.Window.Dialog
 			catch (Exception ex)
 			{
 
-				MessageBox.Show("パラメータ設定に失敗しました。\r\n" + ex.Message, "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show("设置参数失败。\r\n" + ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 
 

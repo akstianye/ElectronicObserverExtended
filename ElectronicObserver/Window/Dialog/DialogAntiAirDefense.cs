@@ -73,7 +73,7 @@ namespace ElectronicObserver.Window.Dialog
 
 			if (!KCDatabase.Instance.Fleet.IsAvailable)
 			{
-				MessageBox.Show("艦隊データが読み込まれていません。\r\n艦これを起動してから開いてください。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show("舰队数据没有被读取。\r\n请启动这个之后再打开。", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				Close();
 				return;
 			}
